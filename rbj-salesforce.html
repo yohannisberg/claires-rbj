@@ -1,0 +1,2809 @@
+<style type="text/css">
+/* For LOCAL - START */
+/*@font-face {
+  font-family: plaax;
+  src: url(PlaaxLight.ttf);
+  font-weight: 300;
+}
+@font-face {
+  font-family: plaax;
+  src: url(PlaaxRegular.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: plaax;
+  src: url(PlaaxBold.ttf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: plaax;
+  src: url(PlaaxHeavy.ttf);
+  font-weight: 900;
+}*/
+/* For LOCAL - END */
+
+/* For SALESFORCE - START */
+ @font-face {
+  font-family: plaax;
+  src: url(fonts/Plaax%20-%2026-Ney-Light-205TF.ttf?$staticlink$);
+  font-weight: 300;
+}
+@font-face {
+  font-family: plaax;
+  src: url(fonts/Plaax%20-%2036-Ney-Regular-205TF.ttf?$staticlink$);
+  font-weight: 400;
+}
+@font-face {
+  font-family: plaax;
+  src: url(fonts/Plaax%20-%2046-Ney-Bold-205TF.ttf?$staticlink$);
+  font-weight: 700;
+}
+@font-face {
+  font-family: plaax;
+  src: url(fonts/Plaax%20-%2056-Ney-Heavy-205TF.ttf?$staticlink$);
+  font-weight: 900;
+} 
+/* For SALESFORCE - END */
+
+/* Salesforce Overwrites - START */
+.content-asset p, .loyalty-content p, .myaccount-loyalty p {
+  line-height: inherit;
+  margin: inherit;
+}
+.psb-wrapper .col-2-jd {
+  float: inherit;
+}
+.psb-wrapper p {
+  font-size: inherit;
+  font-weight: inherit;
+}
+ol li, ul li {
+  font-size: inherit;
+  font-family: inherit;
+  line-height: inherit;
+}
+.content-asset ul li, .loyalty-content ul li, .myaccount-loyalty ul li {
+  list-style: inherit;
+}
+.content-asset ol, .content-asset ul, .loyalty-content ol, .loyalty-content ul, .myaccount-loyalty ol, .myaccount-loyalty ul {
+  line-height: inherit;
+  margin: inherit;
+  padding: inherit;
+}
+/* Salesforce Overwrites - END */
+
+
+:root {
+  --vw: 1vw;
+  --vwFW: 1vw;
+
+  --breakdownSub: calc(var(--vw)* 1.55);
+}
+
+/* 1280px = 80em */
+@media only screen and (min-width:80em) {
+  :root {
+    /*--vw:13px;*/
+    --vw: 12.8px;
+  }
+}
+
+@media only screen and (max-width:48em) {
+  :root {
+    --breakdownSub: calc(var(--vw)* 2.7);
+  }
+}
+
+.rbj-element h1,
+.rbj-element h2,
+.rbj-element h3,
+.rbj-element h4,
+.rbj-element div,
+.rbj-element span,
+.rbj-element p{
+  font-family: plaax;
+  color: #000000;
+}
+
+.fw100 {
+  font-weight: 100 !important;
+}
+.fw400 {
+  font-weight: 400 !important;
+}
+.fw600 {
+  font-weight: 600 !important;
+}
+.fw800 {
+  font-weight: 800 !important;
+}
+.cap {
+  text-transform: uppercase;
+}
+.center {
+  text-align: center !important;
+}
+
+@media only screen and (min-width:48em) {
+  .center-dt {
+    text-align: center !important;
+  }
+}
+
+@media only screen and (max-width:48em) {
+  .center-mb {
+    text-align: center !important;
+  }
+}
+
+
+/* SF Styling fixes */
+.breadcrumb,
+.clp-shopby, 
+.clp-product-display-title, 
+#back, 
+#articles,
+#secondary {
+   display: none;
+}
+
+#primary {
+  padding: 0 !important;
+   width: 100%;
+}
+
+#main {
+  max-width: 100%;
+  padding: 0 !important;
+  margin: 0 !important;
+  width: 100%;
+}
+/* SF Styling fixes END */
+
+
+.home {
+   background: green;
+}
+ .home .texting {
+   background: red;
+   font-family: plaax;
+}
+/* Global */
+@media only screen and (min-width: 1024px) {
+    nav[role=navigation] {
+      min-height: inherit;
+    }
+}
+ * {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+ .content-slot {
+   margin-bottom: 0 !important;
+   text-align: inherit !important;
+   display: block !important;
+}
+ .a-inherit {
+   display: inherit;
+   flex-direction: inherit;
+   justify-content: inherit;
+   align-items: inherit;
+   flex-wrap: inherit;
+   color: inherit;
+   text-decoration: inherit;
+   font-size: inherit;
+   overflow: inherit;
+   width: 100%;
+}
+ .cta {
+   background: #9358f3;
+   color: #fff;
+   font-family: plaax;
+   text-decoration: none;
+   font-weight: 600;
+   font-size: calc(var(--vw)* 1.25);
+   letter-spacing: calc(var(--vw)* .06);
+   padding: calc(var(--vw)* 1.15) calc(var(--vw)* 1.5) calc(var(--vw)* 1.25) calc(var(--vw)* 1.5);
+   border-radius: calc(var(--vw)* 50);
+}
+ @media only screen and (max-width: 48em) {
+   .cta {
+     font-size: calc(var(--vw)* 2.1);
+     padding: calc(var(--vw)* 1.25) calc(var(--vw)* 3) calc(var(--vw)* 1.55) calc(var(--vw)* 3);
+  }
+}
+ .space-hero {
+   height: calc(var(--vw)*2);
+}
+ .space-mod {
+   height: calc(var(--vw)*6.094);
+   width: 100%;
+}
+ @media only screen and (max-width: 48em) {
+   .space-mod {
+     height: calc(var(--vw)*4.5);
+  }
+}
+/* Desktop */
+ @media only screen and (min-width: 48em) {
+   .mobile-only-jd {
+     display: none !important;
+  }
+}
+/* Mobile */
+ @media only screen and (max-width: 48em) {
+   .desktop-only-jd {
+     display: none !important;
+  }
+}
+/* RBJ Global */
+ .headline {
+   width: calc(var(--vw)*79);
+   background: #00f6b8;
+   font-size: calc(var(--vw)* 4.2);
+   line-height: 1.2;
+   font-weight: 800;
+   padding: calc(var(--vw)*0) calc(var(--vw)*.2) calc(var(--vw)*0.5) calc(var(--vw)*.2);
+   text-align: center;
+   margin: 0 auto;
+}
+ @media only screen and (max-width: 48em) {
+   .headline {
+     width: calc(var(--vw)*91);
+  }
+}
+ .rbj-element {
+   width: 100%;
+   max-width: 1280px;
+   margin: 0 auto;
+}
+ .rbj-element img {
+   display: block;
+}
+/* Hero Wrapper */
+ .rbj-hero-wrapper {
+   background-color: #cebdfa;
+   display: flex;
+   flex-direction: row;
+}
+ .rbj-hero-wrapper .img-wrapper {
+   width: calc(var(--vw)*30.5);
+}
+ .rbj-hero-wrapper .img-wrapper img {
+   width: 100%;
+}
+ .rbj-hero-wrapper .text-wrapper {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   width: auto;
+   padding: 0 calc(var(--vw)* 4);
+}
+ .rbj-hero-wrapper .text-wrapper .logo {
+   width: calc(var(--vw)*18);
+   margin-bottom: calc(var(--vw)* 1);
+}
+ .rbj-hero-wrapper .text-wrapper .hero-title {
+   line-height: 1.2;
+   font-size: calc(var(--vw)*5.5);
+   margin-bottom: calc(var(--vw)* 0.5);
+}
+ .rbj-hero-wrapper .text-wrapper .hero-sub {
+   line-height: 1.2;
+   font-size: calc(var(--vw)*2.3);
+   margin-bottom: calc(var(--vw)* 4);
+}
+ .rbj-hero-wrapper .text-wrapper .hero-exc {
+   font-size: calc(var(--vw)*1.4);
+}
+ @media only screen and (max-width: 48em) {
+  /* Hero Wrapper */
+   .rbj-hero-wrapper .img-wrapper {
+     width: calc(var(--vw)*32);
+  }
+   .rbj-hero-wrapper .logo {
+     margin-bottom: calc(var(--vw)* 0.8);
+  }
+   .rbj-hero-wrapper .hero-title {
+     margin-bottom: calc(var(--vw)* 0.8);
+  }
+   .rbj-hero-wrapper .hero-sub {
+     font-size: calc(var(--vw)*2.6);
+     margin-bottom: calc(var(--vw)* 3);
+     line-height: 1.3;
+  }
+   .rbj-hero-wrapper .hero-exc {
+     font-size: calc(var(--vw)*1);
+  }
+}
+/* Piercing Size Breakdown Wrapper (ALL) */
+ .psb-wrapper {
+  /* (Gauge Guide) */
+  /* (2 Text Columns: Ear, Nose, Body) */
+  /* (Length Guide) */
+  /* (Diameter Guide) */
+}
+ .psb-wrapper .cat-wrap {
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-start;
+   align-items: flex-start;
+   width: calc(var(--vw)* 79);
+   margin: calc(var(--vw)* 0) auto;
+   padding: calc(var(--vw)* 4) 0 calc(var(--vw)* 3.5) 0;
+}
+ @media only screen and (max-width: 48em) {
+   .psb-wrapper .cat-wrap {
+     width: calc(var(--vw)* 91);
+     padding: calc(var(--vw)* 6) 0 calc(var(--vw)* 5.5) 0;
+  }
+}
+ .psb-wrapper .cat-wrap .title {
+   background: #cebdfa;
+   font-weight: 800;
+   font-size: calc(var(--vw)*2.3);
+   padding: calc(var(--vw)*.4) calc(var(--vw)*2) calc(var(--vw)*.6) calc(var(--vw)*2);
+}
+ @media only screen and (max-width: 48em) {
+   .psb-wrapper .cat-wrap .title {
+     font-size: calc(var(--vw)*2.8);
+  }
+}
+ .psb-wrapper .cat-wrap:not(.top) {
+   border-top: calc(var(--vw)* .15) solid #cebdfa;
+}
+ @media only screen and (max-width: 48em) {
+   .psb-wrapper .cat-wrap:not(.top) {
+     border-top: calc(var(--vw)* .35) solid #cebdfa;
+  }
+}
+ @media only screen and (max-width: 48em) {
+   .psb-wrapper .gauge-guide {
+     justify-content: space-between;
+  }
+}
+ .psb-wrapper .gauge-guide .title {
+   margin-top: calc(var(--vw)* 6.5);
+}
+ @media only screen and (max-width: 48em) {
+   .psb-wrapper .gauge-guide .title {
+     margin-top: calc(var(--vw)* 15.5);
+  }
+}
+ .psb-wrapper .gauge-guide .content {
+   margin-left: calc(var(--vw)* 11.5);
+}
+ @media only screen and (max-width: 48em) {
+   .psb-wrapper .gauge-guide .content {
+     margin-left: 0;
+     margin-right: 0;
+  }
+}
+ .psb-wrapper .gauge-guide .content .gauge-wrap {
+   position: relative;
+   text-align: center;
+}
+ .psb-wrapper .gauge-guide .content .gauge-wrap .label {
+   position: absolute;
+   font-weight: 800;
+   top: calc(var(--vw)* 1.2);
+   left: calc(var(--vw)* 16.5);
+   font-size: calc(var(--vw)* 1.1);
+}
+ @media only screen and (max-width: 48em) {
+   .psb-wrapper .gauge-guide .content .gauge-wrap .label {
+     left: calc(var(--vw)* 22);
+     font-size: calc(var(--vw)* 1.8);
+  }
+}
+ .psb-wrapper .gauge-guide .content .gauge-wrap .gauges {
+   width: calc(var(--vw)* 36.5);
+}
+ @media only screen and (max-width: 48em) {
+   .psb-wrapper .gauge-guide .content .gauge-wrap .gauges {
+     width: calc(var(--vw)* 50);
+  }
+}
+ .psb-wrapper .gauge-guide .content .gauge-wrap .gauge-sizes {
+   font-weight: 800;
+   font-size: calc(var(--vw)* 1.6);
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   width: calc(var(--vw)* 39);
+   margin-left: calc(var(--vw)* -0.5);
+   margin-bottom: calc(var(--vw)* 1);
+}
+ @media only screen and (max-width: 48em) {
+   .psb-wrapper .gauge-guide .content .gauge-wrap .gauge-sizes {
+     font-size: calc(var(--vw)* 2.5);
+     width: calc(var(--vw)* 54);
+     margin-left: calc(var(--vw)* -1.15);
+  }
+}
+ .psb-wrapper .gauge-guide .content .gauge-wrap .gauge-sizes p {
+   padding: calc(var(--vw)* .5) 0;
+   margin: 0;
+}
+ .psb-wrapper .gauge-guide .content .gauge-wrap .btm-txt {
+   font-size: calc(var(--vw)* 1.3);
+   font-weight: 800;
+   margin-left: calc(var(--vw)* -0.8);
+}
+ @media only screen and (max-width: 48em) {
+   .psb-wrapper .gauge-guide .content .gauge-wrap .btm-txt {
+     font-size: calc(var(--vw)* 1.9);
+     margin-left: calc(var(--vw)* -3.2);
+  }
+}
+ .psb-wrapper .col-2-jd {
+   justify-content: space-between;
+}
+ @media only screen and (max-width: 48em) {
+   .psb-wrapper .col-2-jd {
+     flex-direction: column;
+  }
+}
+ @media only screen and (max-width: 48em) {
+   .psb-wrapper .col-2-jd .title {
+     margin-bottom: calc(var(--vw)* 4);
+  }
+}
+ @media only screen and (max-width: 48em) {
+   .psb-wrapper .col-2-jd .content {
+     margin-left: 0;
+     width: 100%;
+  }
+}
+ .psb-wrapper .col-2-jd .content .col-2-wrap {
+   display: flex;
+   flex-direction: row;
+   width: calc(var(--vw)* 60);
+}
+ @media only screen and (max-width: 48em) {
+   .psb-wrapper .col-2-jd .content .col-2-wrap {
+     width: auto;
+     justify-content: flex-start;
+     padding: 0 calc(var(--vw)* .25);
+  }
+}
+ .psb-wrapper .col-2-jd .content .col-2-wrap .col-1-jd {
+   width: calc(var(--vw)* 28);
+   padding-right: calc(var(--vw)* 2);
+}
+ @media only screen and (max-width: 48em) {
+   .psb-wrapper .col-2-jd .content .col-2-wrap .col-1-jd {
+     width: calc(var(--vw)* 50);
+  }
+}
+ .psb-wrapper .col-2-jd .content .col-2-wrap p {
+   font-size: var(--breakdownSub);
+   font-weight: 600;
+   margin-bottom: calc(var(--vw)* 1.2);
+}
+ @media only screen and (max-width: 48em) {
+   .psb-wrapper .col-2-jd .content .col-2-wrap p {
+     margin-bottom: calc(var(--vw)* 2.2);
+  }
+}
+ .psb-wrapper .length-guide {
+   justify-content: space-between;
+}
+ @media only screen and (max-width: 48em) {
+   .psb-wrapper .length-guide {
+     justify-content: space-between;
+  }
+}
+ .psb-wrapper .length-guide .title {
+   margin-top: calc(var(--vw)* 6.5);
+}
+ @media only screen and (max-width: 48em) {
+   .psb-wrapper .length-guide .title {
+     margin-top: calc(var(--vw)* 13);
+  }
+}
+ .psb-wrapper .length-guide .content {
+   margin-left: 0;
+}
+ @media only screen and (max-width: 48em) {
+   .psb-wrapper .length-guide .content {
+     margin-left: 0;
+     margin-right: 0;
+  }
+}
+ .psb-wrapper .length-guide .content .length-wrap {
+   position: relative;
+   text-align: center;
+}
+ .psb-wrapper .length-guide .content .length-wrap .label {
+   position: absolute;
+   font-weight: 800;
+   top: calc(var(--vw)* 1.2);
+   left: calc(var(--vw)* 16.5);
+   font-size: calc(var(--vw)* 1.1);
+}
+ @media only screen and (max-width: 48em) {
+   .psb-wrapper .length-guide .content .length-wrap .label {
+     left: calc(var(--vw)* 22);
+     font-size: calc(var(--vw)* 1.8);
+  }
+}
+ .psb-wrapper .length-guide .content .length-wrap .lengths {
+   width: calc(var(--vw)* 53);
+}
+ @media only screen and (max-width: 48em) {
+   .psb-wrapper .length-guide .content .length-wrap .lengths {
+     width: calc(var(--vw)* 62);
+  }
+}
+ .psb-wrapper .length-guide .content .length-wrap .length-sizes {
+   font-weight: 800;
+   font-size: calc(var(--vw)* 1.6);
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   width: calc(var(--vw)* 44.1);
+   margin-top: calc(var(--vw)* -1.2);
+   margin-left: auto;
+   margin-right: calc(var(--vw)* 2);
+   margin-bottom: calc(var(--vw)* 1);
+}
+ @media only screen and (max-width: 48em) {
+   .psb-wrapper .length-guide .content .length-wrap .length-sizes {
+     font-size: calc(var(--vw)* 2.5);
+     width: calc(var(--vw)* 54);
+     margin-left: calc(var(--vw)* 6.85);
+  }
+}
+ .psb-wrapper .length-guide .content .length-wrap .length-sizes p {
+   font-weight: 100;
+   padding: calc(var(--vw)* .5) 0;
+   margin: 0;
+}
+ .psb-wrapper .diameter-guide {
+   justify-content: space-between;
+   flex-direction: column;
+   margin-bottom: calc(var(--vw)* 6);
+}
+ @media only screen and (max-width: 48em) {
+   .psb-wrapper .diameter-guide {
+     justify-content: space-between;
+  }
+}
+ .psb-wrapper .diameter-guide .title {
+   margin-top: calc(var(--vw)* 2);
+}
+ @media only screen and (max-width: 48em) {
+   .psb-wrapper .diameter-guide .title {
+     margin-top: calc(var(--vw)* 0);
+  }
+}
+ .psb-wrapper .diameter-guide .content {
+   margin-left: 0;
+   display: flex;
+   flex-direction: row;
+}
+ @media only screen and (max-width: 48em) {
+   .psb-wrapper .diameter-guide .content {
+     margin-left: 0;
+     margin-right: 0;
+  }
+}
+ .psb-wrapper .diameter-guide .content .diameter-wrap {
+   position: relative;
+   text-align: center;
+   margin-left: calc(var(--vw)* -4.5);
+   margin-top: calc(var(--vw)* 1.5);
+}
+ .psb-wrapper .diameter-guide .content .diameter-wrap .earring {
+   width: calc(var(--vw)* 34.5);
+   margin-left: calc(var(--vw)* 0);
+}
+ @media only screen and (max-width: 48em) {
+   .psb-wrapper .diameter-guide .content .diameter-wrap .earring {
+     width: calc(var(--vw)* 41);
+     margin-left: calc(var(--vw)* -3.5);
+  }
+}
+ .psb-wrapper .diameter-guide .content .diameter-wrap .diameter-text {
+   position: absolute;
+   font-weight: 800;
+   top: calc(var(--vw)* 10.7);
+   left: calc(var(--vw)* 12.9);
+   font-size: calc(var(--vw)* 1.6);
+}
+ .psb-wrapper .diameter-guide .content .diameter-wrap .diameter-text p {
+   font-weight: 800;
+}
+ @media only screen and (max-width: 48em) {
+   .psb-wrapper .diameter-guide .content .diameter-wrap .diameter-text {
+     left: calc(var(--vw)* 11.5);
+     top: calc(var(--vw)* 12);
+     font-size: calc(var(--vw)* 2.1);
+  }
+}
+ .psb-wrapper .diameter-guide .content .diameter-wrap-2 {
+   position: relative;
+   margin-top: calc(var(--vw)* 0.5);
+}
+ @media only screen and (max-width: 48em) {
+   .psb-wrapper .diameter-guide .content .diameter-wrap-2 {
+     left: calc(var(--vw)* -1);
+  }
+}
+ .psb-wrapper .diameter-guide .content .diameter-wrap-2 .row-1 .earrings {
+   position: relative;
+   width: calc(var(--vw)* 48.7);
+   margin-left: calc(var(--vw)* -.3);
+}
+ @media only screen and (max-width: 48em) {
+   .psb-wrapper .diameter-guide .content .diameter-wrap-2 .row-1 .earrings {
+     width: calc(var(--vw)* 57);
+     margin-left: calc(var(--vw)* 2.6);
+  }
+}
+ .psb-wrapper .diameter-guide .content .diameter-wrap-2 .row-1 .diameter-sizes-1 {
+   font-size: calc(var(--vw)* 1.6);
+   display: flex;
+   flex-direction: row;
+   width: calc(var(--vw)* 45);
+   margin-top: calc(var(--vw)* -1.2);
+   margin-left: calc(var(--vw)* -1.9);
+   margin-right: auto;
+   margin-bottom: calc(var(--vw)* 1);
+}
+ @media only screen and (max-width: 48em) {
+   .psb-wrapper .diameter-guide .content .diameter-wrap-2 .row-1 .diameter-sizes-1 {
+     font-size: calc(var(--vw)* 2.1);
+     width: calc(var(--vw)* 54);
+     margin-left: calc(var(--vw)* 0);
+  }
+}
+ .psb-wrapper .diameter-guide .content .diameter-wrap-2 .row-1 .diameter-sizes-1 p {
+   font-weight: 400;
+   padding: calc(var(--vw)* 1.9) calc(var(--vw)* 2.8) 0 0;
+   text-align: center;
+   margin: 0;
+}
+ .psb-wrapper .diameter-guide .content .diameter-wrap-2 .row-1 .diameter-sizes-1 p:nth-child(2) {
+   margin-right: calc(var(--vw)* 1.1);
+}
+ .psb-wrapper .diameter-guide .content .diameter-wrap-2 .row-1 .diameter-sizes-1 p:nth-child(3) {
+   margin-right: calc(var(--vw)* 1.8);
+}
+ @media only screen and (max-width: 48em) {
+   .psb-wrapper .diameter-guide .content .diameter-wrap-2 .row-1 .diameter-sizes-1 p:nth-child(3) {
+     margin-right: calc(var(--vw)* 1.3);
+  }
+}
+ .psb-wrapper .diameter-guide .content .diameter-wrap-2 .row-1 .diameter-sizes-1 p:nth-child(4) {
+   margin-right: calc(var(--vw)* 2.2);
+}
+ .psb-wrapper .diameter-guide .content .diameter-wrap-2 .row-2 .earrings-2 {
+   position: relative;
+   width: calc(var(--vw)* 52.7);
+   margin-left: calc(var(--vw)* -2.5);
+}
+ @media only screen and (max-width: 48em) {
+   .psb-wrapper .diameter-guide .content .diameter-wrap-2 .row-2 .earrings-2 {
+     width: calc(var(--vw)* 62);
+     margin-left: calc(var(--vw)* -0.4);
+  }
+}
+ .psb-wrapper .diameter-guide .content .diameter-wrap-2 .row-2 .diameter-sizes-2 {
+   font-size: calc(var(--vw)* 1.6);
+   display: flex;
+   flex-direction: row;
+   width: calc(var(--vw)* 45);
+   margin-top: calc(var(--vw)* -1.2);
+   margin-left: calc(var(--vw)* -1);
+   margin-right: auto;
+   margin-bottom: calc(var(--vw)* 1);
+}
+ @media only screen and (max-width: 48em) {
+   .psb-wrapper .diameter-guide .content .diameter-wrap-2 .row-2 .diameter-sizes-2 {
+     font-size: calc(var(--vw)* 2.1);
+     width: calc(var(--vw)* 54);
+     margin-left: calc(var(--vw)* 0.9);
+  }
+}
+ .psb-wrapper .diameter-guide .content .diameter-wrap-2 .row-2 .diameter-sizes-2 p {
+   font-weight: 400;
+   padding: calc(var(--vw)* 1.9) calc(var(--vw)* 3.4) 0 0;
+   text-align: center;
+   margin: 0;
+}
+ .psb-wrapper .diameter-guide .content .diameter-wrap-2 .row-2 .diameter-sizes-2 p:nth-child(2) {
+   margin-right: calc(var(--vw)* 0.5);
+}
+ .psb-wrapper .diameter-guide .content .diameter-wrap-2 .row-2 .diameter-sizes-2 p:nth-child(3) {
+   margin-right: calc(var(--vw)* 1.8);
+}
+ .psb-wrapper .diameter-guide .content .diameter-wrap-2 .row-2 .diameter-sizes-2 p:nth-child(4) {
+   margin-right: calc(var(--vw)* 1.8);
+}
+ .ear-placements-wrapper .ear-hover {
+   position: relative;
+   width: calc(var(--vw)* 79);
+   margin: calc(var(--vw)* 5) auto 0 auto;
+}
+ @media only screen and (max-width: 48em) {
+   .ear-placements-wrapper .ear-hover {
+     width: calc(var(--vw)* 91);
+  }
+}
+ .ear-placements-wrapper .ear-hover .ear-placements {
+   width: 100%;
+}
+ .ear-placements-wrapper .ear-hover .dots-wrapper {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+  /* Toggled via Jquery */
+}
+ .ear-placements-wrapper .ear-hover .dots-wrapper .dot {
+   position: absolute;
+   width: calc(var(--vw)* 2.5);
+   height: calc(var(--vw)* 2.5);
+   border-radius: 50%;
+   cursor: pointer;
+}
+ .ear-placements-wrapper .ear-hover .dots-wrapper .blurb {
+   opacity: 0;
+   z-index: -1;
+   transition: 0.25s all;
+   position: absolute;
+   top: calc(var(--vw)* 4);
+   right: calc(var(--vw)* 2);
+   width: calc(var(--vw)* 26.7);
+   height: calc(var(--vw)* 26.7);
+   border-radius: calc(var(--vw)* 50);
+   background: #cebdfa;
+   padding: calc(var(--vw)* 3.1) calc(var(--vw)* 5.8) calc(var(--vw)* 1.8) calc(var(--vw)* 6.2);
+}
+ @media only screen and (max-width: 48em) {
+   .ear-placements-wrapper .ear-hover .dots-wrapper .blurb {
+     transition: 0.5s all;
+     height: calc(var(--vw)* 56);
+     width: calc(var(--vw)* 56);
+     top: 0;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     margin: auto;
+     padding: calc(var(--vw)* 6) calc(var(--vw)* 14) calc(var(--vw)* 1.8) calc(var(--vw)* 14);
+  }
+}
+ .ear-placements-wrapper .ear-hover .dots-wrapper .blurb .elements-wrapper p, .ear-placements-wrapper .ear-hover .dots-wrapper .blurb .elements-wrapper li {
+   font-size: calc(var(--vw)* .85);
+   line-height: 1.35;
+}
+ @media only screen and (max-width: 48em) {
+   .ear-placements-wrapper .ear-hover .dots-wrapper .blurb .elements-wrapper p, .ear-placements-wrapper .ear-hover .dots-wrapper .blurb .elements-wrapper li {
+     font-size: calc(var(--vw)* 1.85);
+  }
+}
+ .ear-placements-wrapper .ear-hover .dots-wrapper .blurb .elements-wrapper .head {
+   margin-bottom: calc(var(--vw)* 1);
+}
+ .ear-placements-wrapper .ear-hover .dots-wrapper .blurb .elements-wrapper .head .title {
+   font-size: calc(var(--vw)* 1.7);
+   text-transform: uppercase;
+   font-weight: 800;
+   line-height: 0.9;
+   margin-bottom: calc(var(--vw)* 0.5);
+}
+ @media only screen and (max-width: 48em) {
+   .ear-placements-wrapper .ear-hover .dots-wrapper .blurb .elements-wrapper .head .title {
+     font-size: calc(var(--vw)* 3.5);
+  }
+}
+ .ear-placements-wrapper .ear-hover .dots-wrapper .blurb .elements-wrapper .head .sub {
+   font-weight: 800;
+}
+ .ear-placements-wrapper .ear-hover .dots-wrapper .blurb .elements-wrapper .bod .b {
+   margin-top: calc(var(--vw)* .1);
+   font-weight: 800;
+}
+ .ear-placements-wrapper .ear-hover .dots-wrapper .blurb .elements-wrapper .bod ul {
+   padding-left: calc(var(--vw)* 1.6);
+}
+ @media only screen and (max-width: 48em) {
+   .ear-placements-wrapper .ear-hover .dots-wrapper .blurb .elements-wrapper .bod ul {
+     padding-left: calc(var(--vw)* 3.2);
+  }
+}
+ .ear-placements-wrapper .ear-hover .dots-wrapper .active-color {
+   opacity: 1;
+   z-index: 0;
+}
+ @media only screen and (max-width: 48em) {
+   .ear-placements-wrapper .ear-hover .dots-wrapper .blurb:after {
+     content: 'x';
+     color: #cebdfa;
+     position: absolute;
+     top: 0;
+     right: 0;
+     left: auto;
+     font-size: calc(var(--vw)* 4);
+     text-shadow: rgba(0, 0, 0, .5) calc(var(--vw)* 1) 0 calc(var(--vw)* 2);
+     cursor: pointer;
+  }
+}
+ @media only screen and (min-width: 48em) {
+   .ear-placements-wrapper .ear-hover .dots-wrapper .black-dot:hover ~ .black-blurb, .ear-placements-wrapper .ear-hover .dots-wrapper .black-dot:active ~ .black-blurb {
+     opacity: 1;
+     z-index: 0;
+  }
+   .ear-placements-wrapper .ear-hover .dots-wrapper .blue-dot:hover ~ .blue-blurb, .ear-placements-wrapper .ear-hover .dots-wrapper .blue-dot:active ~ .blue-blurb {
+     opacity: 1;
+     z-index: 0;
+  }
+   .ear-placements-wrapper .ear-hover .dots-wrapper .green-dot:hover ~ .green-blurb, .ear-placements-wrapper .ear-hover .dots-wrapper .green-dot:active ~ .green-blurb {
+     opacity: 1;
+     z-index: 0;
+  }
+   .ear-placements-wrapper .ear-hover .dots-wrapper .light-purple-dot:hover ~ .light-purple-blurb, .ear-placements-wrapper .ear-hover .dots-wrapper .light-purple-dot:active ~ .light-purple-blurb {
+     opacity: 1;
+     z-index: 0;
+  }
+   .ear-placements-wrapper .ear-hover .dots-wrapper .orange-dot:hover ~ .orange-blurb, .ear-placements-wrapper .ear-hover .dots-wrapper .orange-dot:active ~ .orange-blurb {
+     opacity: 1;
+     z-index: 0;
+  }
+   .ear-placements-wrapper .ear-hover .dots-wrapper .pink-dot:hover ~ .pink-blurb, .ear-placements-wrapper .ear-hover .dots-wrapper .pink-dot:active ~ .pink-blurb {
+     opacity: 1;
+     z-index: 0;
+  }
+   .ear-placements-wrapper .ear-hover .dots-wrapper .purple-dot:hover ~ .purple-blurb, .ear-placements-wrapper .ear-hover .dots-wrapper .purple-dot:active ~ .purple-blurb {
+     opacity: 1;
+     z-index: 0;
+  }
+   .ear-placements-wrapper .ear-hover .dots-wrapper .yellow-dot-1:hover ~ .yellow-blurb, .ear-placements-wrapper .ear-hover .dots-wrapper .yellow-dot-1:active ~ .yellow-blurb, .ear-placements-wrapper .ear-hover .dots-wrapper .yellow-dot-2:hover ~ .yellow-blurb, .ear-placements-wrapper .ear-hover .dots-wrapper .yellow-dot-2:active ~ .yellow-blurb {
+     opacity: 1;
+     z-index: 0;
+  }
+   .ear-placements-wrapper .ear-hover .dots-wrapper .white-dot:hover ~ .white-blurb, .ear-placements-wrapper .ear-hover .dots-wrapper .white-dot:active ~ .white-blurb {
+     opacity: 1;
+     z-index: 0;
+  }
+}
+ .ear-placements-wrapper .ear-hover .dots-wrapper .blurb .piercing {
+   position: absolute;
+}
+ .ear-placements-wrapper .ear-hover .dots-wrapper .black-blurb .piercing {
+   top: calc(var(--vw)* 8);
+   width: calc(var(--vw)* 6.75);
+   right: calc(var(--vw)* 3);
+}
+ @media only screen and (max-width: 48em) {
+   .ear-placements-wrapper .ear-hover .dots-wrapper .black-blurb .piercing {
+     top: calc(var(--vw)* 12);
+     width: calc(var(--vw)* 19);
+     right: calc(var(--vw)* 1.5);
+  }
+}
+ .ear-placements-wrapper .ear-hover .dots-wrapper .blue-blurb .piercing {
+   top: calc(var(--vw)* 8);
+   width: calc(var(--vw)* 6.9);
+   right: calc(var(--vw)* 2);
+}
+ @media only screen and (max-width: 48em) {
+   .ear-placements-wrapper .ear-hover .dots-wrapper .blue-blurb .piercing {
+     top: calc(var(--vw)* 15);
+     width: calc(var(--vw)* 17);
+     right: calc(var(--vw)* 1.5);
+  }
+}
+ .ear-placements-wrapper .ear-hover .dots-wrapper .green-blurb .piercing {
+   top: calc(var(--vw)* 7);
+   width: calc(var(--vw)* 13);
+   right: calc(var(--vw)* -1);
+}
+ @media only screen and (max-width: 48em) {
+   .ear-placements-wrapper .ear-hover .dots-wrapper .green-blurb .piercing {
+     top: calc(var(--vw)* 13);
+     width: calc(var(--vw)* 30);
+     right: calc(var(--vw)* -3.5);
+  }
+}
+ .ear-placements-wrapper .ear-hover .dots-wrapper .light-purple-blurb .piercing {
+   top: calc(var(--vw)* 9);
+   width: calc(var(--vw)* 9);
+   right: calc(var(--vw)* 1);
+}
+ @media only screen and (max-width: 48em) {
+   .ear-placements-wrapper .ear-hover .dots-wrapper .light-purple-blurb .piercing {
+     top: calc(var(--vw)* 17);
+     width: calc(var(--vw)* 18);
+     right: calc(var(--vw)* 2.5);
+  }
+}
+ .ear-placements-wrapper .ear-hover .dots-wrapper .orange-blurb .piercing {
+   top: calc(var(--vw)* 7.5);
+   width: calc(var(--vw)* 9.25);
+   right: calc(var(--vw)* 1);
+}
+ @media only screen and (max-width: 48em) {
+   .ear-placements-wrapper .ear-hover .dots-wrapper .orange-blurb .piercing {
+     top: calc(var(--vw)* 16);
+     width: calc(var(--vw)* 19);
+     right: calc(var(--vw)* 0.5);
+  }
+}
+ .ear-placements-wrapper .ear-hover .dots-wrapper .pink-blurb .piercing {
+   top: calc(var(--vw)* 9.5);
+   width: calc(var(--vw)* 8.5);
+   right: calc(var(--vw)* 1);
+}
+ @media only screen and (max-width: 48em) {
+   .ear-placements-wrapper .ear-hover .dots-wrapper .pink-blurb .piercing {
+     top: calc(var(--vw)* 16);
+     width: calc(var(--vw)* 17);
+     right: calc(var(--vw)* 1.5);
+  }
+}
+ .ear-placements-wrapper .ear-hover .dots-wrapper .purple-blurb .piercing {
+   top: calc(var(--vw)* 9.5);
+   width: calc(var(--vw)* 9.5);
+   right: calc(var(--vw)* 0.5);
+}
+ @media only screen and (max-width: 48em) {
+   .ear-placements-wrapper .ear-hover .dots-wrapper .purple-blurb .piercing {
+     top: calc(var(--vw)* 20);
+     width: calc(var(--vw)* 21);
+     right: calc(var(--vw)* -0.5);
+  }
+}
+ .ear-placements-wrapper .ear-hover .dots-wrapper .yellow-blurb .piercing {
+   top: calc(var(--vw)* 8);
+   width: calc(var(--vw)* 15);
+   right: calc(var(--vw)* -1.2);
+}
+ @media only screen and (max-width: 48em) {
+   .ear-placements-wrapper .ear-hover .dots-wrapper .yellow-blurb .piercing {
+     top: calc(var(--vw)* 14);
+     width: calc(var(--vw)* 31);
+     right: calc(var(--vw)* -3.5);
+  }
+}
+ .ear-placements-wrapper .ear-hover .dots-wrapper .white-blurb .piercing {
+   top: calc(var(--vw)* 7.5);
+   width: calc(var(--vw)* 10);
+   right: calc(var(--vw)* 0.5);
+}
+ @media only screen and (max-width: 48em) {
+   .ear-placements-wrapper .ear-hover .dots-wrapper .white-blurb .piercing {
+     top: calc(var(--vw)* 16);
+     width: calc(var(--vw)* 21);
+     right: calc(var(--vw)* -0.5);
+  }
+}
+ .ear-placements-wrapper .ear-hover .dots-wrapper .ring {
+   position: absolute;
+   -webkit-border-radius: 50%;
+   width: calc(var(--vw)* 4);
+   height: calc(var(--vw)* 4);
+   -webkit-animation: pulsate 1.5s ease-out;
+   -webkit-animation-iteration-count: infinite;
+   opacity: 0;
+   left: calc(var(--vw)* -.75);
+   top: calc(var(--vw)* -.75);
+}
+ .ear-placements-wrapper .ear-hover .dots-wrapper .black-dot {
+   top: calc(var(--vw)* 27.8);
+   left: calc(var(--vw)* 32.16);
+   background: #000;
+}
+ @media only screen and (max-width: 48em) {
+   .ear-placements-wrapper .ear-hover .dots-wrapper .black-dot {
+     top: calc(var(--vw)* 31.9);
+     left: calc(var(--vw)* 37.16);
+  }
+}
+ .ear-placements-wrapper .ear-hover .dots-wrapper .black-dot .ring {
+   border: calc(var(--vw)* .3) solid #000;
+}
+ .ear-placements-wrapper .ear-hover .dots-wrapper .blue-dot {
+   top: calc(var(--vw)* 28);
+   left: calc(var(--vw)* 26.6);
+   background: #63d9e1;
+}
+ @media only screen and (max-width: 48em) {
+   .ear-placements-wrapper .ear-hover .dots-wrapper .blue-dot {
+     top: calc(var(--vw)* 32);
+     left: calc(var(--vw)* 30.8);
+  }
+}
+ .ear-placements-wrapper .ear-hover .dots-wrapper .blue-dot .ring {
+   border: calc(var(--vw)* .3) solid #63d9e1;
+}
+ .ear-placements-wrapper .ear-hover .dots-wrapper .green-dot {
+   top: calc(var(--vw)* 22.9);
+   left: calc(var(--vw)* 39);
+   background: #5cf3bd;
+}
+ @media only screen and (max-width: 48em) {
+   .ear-placements-wrapper .ear-hover .dots-wrapper .green-dot {
+     top: calc(var(--vw)* 26.3);
+     left: calc(var(--vw)* 45.4);
+  }
+}
+ .ear-placements-wrapper .ear-hover .dots-wrapper .green-dot .ring {
+   border: calc(var(--vw)* .3) solid #5cf3bd;
+}
+ .ear-placements-wrapper .ear-hover .dots-wrapper .light-purple-dot {
+   top: calc(var(--vw)* 10);
+   left: calc(var(--vw)* 41.3);
+   background: #cebdfa;
+}
+ @media only screen and (max-width: 48em) {
+   .ear-placements-wrapper .ear-hover .dots-wrapper .light-purple-dot {
+     top: calc(var(--vw)* 11.5);
+     left: calc(var(--vw)* 47.7);
+  }
+}
+ .ear-placements-wrapper .ear-hover .dots-wrapper .light-purple-dot .ring {
+   border: calc(var(--vw)* .3) solid #cebdfa;
+}
+ .ear-placements-wrapper .ear-hover .dots-wrapper .orange-dot {
+   top: calc(var(--vw)* 37.5);
+   left: calc(var(--vw)* 40);
+   background: #ec6852;
+}
+ @media only screen and (max-width: 48em) {
+   .ear-placements-wrapper .ear-hover .dots-wrapper .orange-dot {
+     top: calc(var(--vw)* 43);
+     left: calc(var(--vw)* 46);
+  }
+}
+ .ear-placements-wrapper .ear-hover .dots-wrapper .orange-dot .ring {
+   border: calc(var(--vw)* .3) solid #ec6852;
+}
+ .ear-placements-wrapper .ear-hover .dots-wrapper .pink-dot {
+   top: calc(var(--vw)* 27.5);
+   left: calc(var(--vw)* 46.8);
+   background: #e871b9;
+}
+ @media only screen and (max-width: 48em) {
+   .ear-placements-wrapper .ear-hover .dots-wrapper .pink-dot {
+     top: calc(var(--vw)* 31.9);
+     left: calc(var(--vw)* 54.2);
+  }
+}
+ .ear-placements-wrapper .ear-hover .dots-wrapper .pink-dot .ring {
+   border: calc(var(--vw)* .3) solid #e871b9;
+}
+ .ear-placements-wrapper .ear-hover .dots-wrapper .purple-dot {
+   top: calc(var(--vw)* 16.25);
+   left: calc(var(--vw)* 32.5);
+   background: #9358f3;
+}
+ @media only screen and (max-width: 48em) {
+   .ear-placements-wrapper .ear-hover .dots-wrapper .purple-dot {
+     top: calc(var(--vw)* 18.8);
+     left: calc(var(--vw)* 37.25);
+  }
+}
+ .ear-placements-wrapper .ear-hover .dots-wrapper .purple-dot .ring {
+   border: calc(var(--vw)* .3) solid #9358f3;
+}
+ .ear-placements-wrapper .ear-hover .dots-wrapper .yellow-dot-1 {
+   top: calc(var(--vw)* 3.5);
+   left: calc(var(--vw)* 36.75);
+   background: #fad000;
+}
+ @media only screen and (max-width: 48em) {
+   .ear-placements-wrapper .ear-hover .dots-wrapper .yellow-dot-1 {
+     top: calc(var(--vw)* 4.1);
+     left: calc(var(--vw)* 42.5);
+  }
+}
+ .ear-placements-wrapper .ear-hover .dots-wrapper .yellow-dot-1 .yellow-line {
+   position: absolute;
+   background: #fad000;
+   top: calc(var(--vw)* -2.4);
+   left: calc(var(--vw)* -6.2);
+   height: calc(var(--vw)* 20.75);
+   width: calc(var(--vw)* .5);
+   transform: rotate(47deg);
+}
+ @media only screen and (max-width: 48em) {
+   .ear-placements-wrapper .ear-hover .dots-wrapper .yellow-dot-1 .yellow-line {
+     top: calc(var(--vw)* -1.8);
+     left: calc(var(--vw)* -8.2);
+     height: calc(var(--vw)* 23.75);
+  }
+}
+ .ear-placements-wrapper .ear-hover .dots-wrapper .yellow-dot-1 .yellow-dot-2 {
+   top: calc(var(--vw)* 14);
+   left: calc(var(--vw)* -14.95);
+   background: #fad000;
+}
+ @media only screen and (max-width: 48em) {
+   .ear-placements-wrapper .ear-hover .dots-wrapper .yellow-dot-1 .yellow-dot-2 {
+     top: calc(var(--vw)* 16.1);
+     left: calc(var(--vw)* -17.1);
+  }
+}
+ .ear-placements-wrapper .ear-hover .dots-wrapper .yellow-dot-1 .yellow-dot-2 .ring {
+   border: calc(var(--vw)* .3) solid #fad000;
+}
+ .ear-placements-wrapper .ear-hover .dots-wrapper .yellow-dot-1 .ring {
+   border: calc(var(--vw)* .3) solid #fad000;
+}
+ .ear-placements-wrapper .ear-hover .dots-wrapper .white-dot {
+   top: calc(var(--vw)* 7.35);
+   left: calc(var(--vw)* 26.4);
+   background: #fff;
+}
+ @media only screen and (max-width: 48em) {
+   .ear-placements-wrapper .ear-hover .dots-wrapper .white-dot {
+     top: calc(var(--vw)* 8.6);
+     left: calc(var(--vw)* 30.7);
+  }
+}
+ .ear-placements-wrapper .ear-hover .dots-wrapper .white-dot .ring {
+   border: calc(var(--vw)* .3) solid #fff;
+}
+ .jewelry-placements-carousel-wrapper {
+   width: 100%;
+   position: relative;
+   max-width: 1280px;
+   margin: 0 auto calc(var(--vw)* 10) auto;
+   padding-left: calc(var(--vw)* 25.7);
+   margin-top: calc(var(--vw)* 8);
+}
+ @media only screen and (max-width: 48em) {
+   .jewelry-placements-carousel-wrapper {
+     padding-left: calc(var(--vw)* 48.5);
+  }
+}
+ .jewelry-placements-carousel-wrapper .mock-slide {
+   position: absolute;
+   left: calc(var(--vw)* 1);
+   top: 0;
+   width: calc(var(--vw)* 24.65);
+   height: 100%;
+   padding: 0 calc(var(--vw)* .5);
+}
+ @media only screen and (max-width: 48em) {
+   .jewelry-placements-carousel-wrapper .mock-slide {
+     width: calc(var(--vw)* 50);
+     padding: 0 calc(var(--vw)* 2);
+  }
+}
+ .jewelry-placements-carousel-wrapper .mock-slide .elements-wrapper {
+   height: 100%;
+   background-color: #63d9e1;
+   border-radius: calc(var(--vw)* 5);
+   padding: calc(var(--vw)* 2) calc(var(--vw)* 2.5) calc(var(--vw)* 1.8) calc(var(--vw)* 2.5);
+}
+ .jewelry-placements-carousel-wrapper .mock-slide .elements-wrapper .sub {
+   position: absolute;
+   font-size: calc(var(--vw)* 1.65);
+   top: calc(var(--vw)* 6.5);
+   left: calc(var(--vw)* 2.6);
+   line-height: 1.2;
+   font-weight: 600;
+}
+ @media only screen and (max-width: 48em) {
+   .jewelry-placements-carousel-wrapper .mock-slide .elements-wrapper .sub {
+     font-size: calc(var(--vw)* 3.2);
+     left: calc(var(--vw)* 5.7);
+     top: calc(var(--vw)* 13);
+  }
+}
+ .jewelry-placements-carousel-wrapper .mock-slide .elements-wrapper .see-more {
+   position: absolute;
+   font-size: calc(var(--vw)* 1.85);
+   top: calc(var(--vw)* 18);
+   left: calc(var(--vw)* 2.6);
+   line-height: 1.2;
+   font-weight: 600;
+}
+ @media only screen and (max-width: 48em) {
+   .jewelry-placements-carousel-wrapper .mock-slide .elements-wrapper .see-more {
+     font-size: calc(var(--vw)* 3.6);
+     top: calc(var(--vw)* 36.5);
+     left: calc(var(--vw)* 5.7);
+  }
+}
+ .jewelry-placements-carousel-wrapper .multiple-items .slick-track {
+   display: flex !important;
+}
+ .jewelry-placements-carousel-wrapper .multiple-items .slick-track .slick-slide {
+   height: auto;
+}
+ .jewelry-placements-carousel-wrapper .multiple-items .placement-slide {
+   position: relative;
+   padding: 0 calc(var(--vw)* .5);
+}
+ @media only screen and (min-width: 48em) {
+   .jewelry-placements-carousel-wrapper .multiple-items .placement-slide {
+      width: calc(var(--vw)* 24.65) !important;
+  }
+}
+ @media only screen and (max-width: 48em) {
+   .jewelry-placements-carousel-wrapper .multiple-items .placement-slide {
+     width: calc(var(--vw)* 50);
+     padding: 0 calc(var(--vw)* 2);
+  }
+}
+ .jewelry-placements-carousel-wrapper .multiple-items .placement-slide .elements-wrapper {
+   height: 100%;
+   background-color: #63d9e1;
+   border-radius: calc(var(--vw)* 5);
+   padding: calc(var(--vw)* 2) calc(var(--vw)* 2.5) calc(var(--vw)* 1.8) calc(var(--vw)* 2.5);
+}
+ @media only screen and (max-width: 48em) {
+   .jewelry-placements-carousel-wrapper .multiple-items .placement-slide .elements-wrapper {
+     padding: calc(var(--vw)* 3.5) calc(var(--vw)* 4.5) calc(var(--vw)* 2.75) calc(var(--vw)* 6);
+  }
+}
+ .jewelry-placements-carousel-wrapper .multiple-items .placement-slide .elements-wrapper p, .jewelry-placements-carousel-wrapper .multiple-items .placement-slide .elements-wrapper li {
+   font-size: calc(var(--vw)* .91);
+}
+ @media only screen and (max-width: 48em) {
+   .jewelry-placements-carousel-wrapper .multiple-items .placement-slide .elements-wrapper p, .jewelry-placements-carousel-wrapper .multiple-items .placement-slide .elements-wrapper li {
+     font-size: calc(var(--vw)* 1.74);
+  }
+}
+ .jewelry-placements-carousel-wrapper .multiple-items .placement-slide .elements-wrapper .head .title {
+   font-size: calc(var(--vw)* 1.9);
+   text-transform: uppercase;
+   font-weight: 800;
+}
+ @media only screen and (max-width: 48em) {
+   .jewelry-placements-carousel-wrapper .multiple-items .placement-slide .elements-wrapper .head .title {
+     font-size: calc(var(--vw)* 3.8);
+     margin-bottom: calc(var(--vw)* .2);
+  }
+}
+ .jewelry-placements-carousel-wrapper .multiple-items .placement-slide .elements-wrapper .head .sub {
+   font-weight: 800;
+}
+ .jewelry-placements-carousel-wrapper .multiple-items .placement-slide .elements-wrapper .bod .b {
+   margin-top: calc(var(--vw)* 1);
+   font-weight: 800;
+}
+ @media only screen and (max-width: 48em) {
+   .jewelry-placements-carousel-wrapper .multiple-items .placement-slide .elements-wrapper .bod .b {
+     margin-top: calc(var(--vw)* 2.1);
+  }
+}
+ .jewelry-placements-carousel-wrapper .multiple-items .placement-slide .elements-wrapper .bod ul {
+   padding-left: calc(var(--vw)* 1.6);
+}
+ .jewelry-placements-carousel-wrapper .multiple-items .placement-slide .jewelry {
+   position: absolute;
+   top: 0;
+}
+ .jewelry-placements-carousel-wrapper .multiple-items .placement-slide .nostril {
+   transform: rotate(-16deg);
+   top: calc(var(--vw)* 8);
+   width: calc(var(--vw)* 9);
+   right: calc(var(--vw)* 1);
+}
+ @media only screen and (max-width: 48em) {
+   .jewelry-placements-carousel-wrapper .multiple-items .placement-slide .nostril {
+     top: calc(var(--vw)* 17);
+     width: calc(var(--vw)* 16);
+     right: calc(var(--vw)* 5);
+  }
+}
+ .jewelry-placements-carousel-wrapper .multiple-items .placement-slide .septum {
+   top: calc(var(--vw)* 10);
+   width: calc(var(--vw)* 9);
+   right: calc(var(--vw)* 1);
+}
+ @media only screen and (max-width: 48em) {
+   .jewelry-placements-carousel-wrapper .multiple-items .placement-slide .septum {
+     top: calc(var(--vw)* 17);
+     width: calc(var(--vw)* 16);
+     right: calc(var(--vw)* 5);
+  }
+}
+ .jewelry-placements-carousel-wrapper .multiple-items .placement-slide .labret {
+   top: calc(var(--vw)* 9);
+   width: calc(var(--vw)* 9);
+   right: calc(var(--vw)* 1);
+}
+ @media only screen and (max-width: 48em) {
+   .jewelry-placements-carousel-wrapper .multiple-items .placement-slide .labret {
+     top: calc(var(--vw)* 17);
+     width: calc(var(--vw)* 16);
+     right: calc(var(--vw)* 5);
+  }
+}
+ .jewelry-placements-carousel-wrapper .multiple-items .placement-slide .lip {
+   top: calc(var(--vw)* 9.5);
+   width: calc(var(--vw)* 9);
+   right: calc(var(--vw)* 1);
+}
+ @media only screen and (max-width: 48em) {
+   .jewelry-placements-carousel-wrapper .multiple-items .placement-slide .lip {
+     top: calc(var(--vw)* 17);
+     width: calc(var(--vw)* 16);
+     right: calc(var(--vw)* 5);
+  }
+}
+ .jewelry-placements-carousel-wrapper .multiple-items .placement-slide .tongue {
+   top: calc(var(--vw)* 9);
+   width: calc(var(--vw)* 9);
+   right: calc(var(--vw)* 2);
+}
+ @media only screen and (max-width: 48em) {
+   .jewelry-placements-carousel-wrapper .multiple-items .placement-slide .tongue {
+     top: calc(var(--vw)* 19);
+     width: calc(var(--vw)* 18);
+     right: calc(var(--vw)* 5);
+  }
+}
+ .jewelry-placements-carousel-wrapper .multiple-items .placement-slide .belly {
+   top: calc(var(--vw)* 7);
+   width: calc(var(--vw)* 6.5);
+   right: calc(var(--vw)* 1.5);
+}
+ @media only screen and (max-width: 48em) {
+   .jewelry-placements-carousel-wrapper .multiple-items .placement-slide .belly {
+     top: calc(var(--vw)* 17);
+     width: calc(var(--vw)* 10);
+     right: calc(var(--vw)* 5);
+  }
+}
+ .jewelry-placements-carousel-wrapper .multiple-items .placement-slide .eyebrow {
+   top: calc(var(--vw)* 9);
+   width: calc(var(--vw)* 6);
+   right: calc(var(--vw)* 3);
+}
+ @media only screen and (max-width: 48em) {
+   .jewelry-placements-carousel-wrapper .multiple-items .placement-slide .eyebrow {
+     top: calc(var(--vw)* 17);
+     width: calc(var(--vw)* 13);
+     right: calc(var(--vw)* 5);
+  }
+}
+ .jewelry-placements-carousel-wrapper .multiple-items .slick-prev {
+   display: none !important;
+}
+ .jewelry-placements-carousel-wrapper .multiple-items .slick-next {
+   background: #9358f3;
+   position: absolute;
+   top: calc(var(--vw)* 19.35);
+   left: calc(var(--vw)* -11.8);
+   width: calc(var(--vw)* 3.2);
+   height: calc(var(--vw)* 3.2);
+   border-radius: calc(var(--vw)* 50);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+ @media only screen and (max-width: 48em) {
+   .jewelry-placements-carousel-wrapper .multiple-items .slick-next {
+     top: calc(var(--vw)* 38.8);
+     left: calc(var(--vw)* -22.75);
+     width: calc(var(--vw)* 6.2);
+     height: calc(var(--vw)* 6.2);
+  }
+}
+ .jewelry-placements-carousel-wrapper .multiple-items .slick-next img {
+   width: calc(var(--vw)* 1.4);
+   position: relative;
+   right: calc(var(--vw)* .05);
+}
+ @media only screen and (max-width: 48em) {
+   .jewelry-placements-carousel-wrapper .multiple-items .slick-next img {
+     width: calc(var(--vw)* 2.5);
+  }
+}
+ .jewelry-placements-carousel-wrapper .multiple-items .slick-next:before {
+   display: none;
+}
+ .jewelry-functionalities-wrapper .functionalities-wrapper {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: center;
+   margin-top: calc(var(--vw)* 3.5);
+}
+ @media only screen and (max-width: 48em) {
+   .jewelry-functionalities-wrapper .functionalities-wrapper {
+     margin-top: calc(var(--vw)* 8);
+  }
+}
+ .jewelry-functionalities-wrapper .functionalities-wrapper .function-wrap:nth-child(1) {
+   background: #5cf3bd;
+}
+ .jewelry-functionalities-wrapper .functionalities-wrapper .function-wrap:nth-child(1) .function-circle {
+   background: #d2bbff;
+}
+ .jewelry-functionalities-wrapper .functionalities-wrapper .function-wrap:nth-child(1) .jewelry {
+   width: calc(var(--vw)* 19);
+   margin-top: calc(var(--vw)* .75);
+}
+ @media only screen and (max-width: 48em) {
+   .jewelry-functionalities-wrapper .functionalities-wrapper .function-wrap:nth-child(1) .jewelry {
+     width: calc(var(--vw)* 35);
+     margin-top: calc(var(--vw)* 3.5);
+  }
+}
+ .jewelry-functionalities-wrapper .functionalities-wrapper .function-wrap:nth-child(2) {
+   background: #d2bbff;
+}
+ .jewelry-functionalities-wrapper .functionalities-wrapper .function-wrap:nth-child(2) .function-circle {
+   background: #63d9e1;
+}
+ .jewelry-functionalities-wrapper .functionalities-wrapper .function-wrap:nth-child(2) .jewelry {
+   width: calc(var(--vw)* 18);
+   margin-top: calc(var(--vw)* -2);
+}
+ @media only screen and (max-width: 48em) {
+   .jewelry-functionalities-wrapper .functionalities-wrapper .function-wrap:nth-child(2) .jewelry {
+     width: calc(var(--vw)* 35);
+     margin-top: calc(var(--vw)* -2);
+  }
+}
+ .jewelry-functionalities-wrapper .functionalities-wrapper .function-wrap:nth-child(3) {
+   background: #63d9e1;
+}
+ .jewelry-functionalities-wrapper .functionalities-wrapper .function-wrap:nth-child(3) .function-circle {
+   background: #5cf3bd;
+}
+ .jewelry-functionalities-wrapper .functionalities-wrapper .function-wrap:nth-child(3) .jewelry {
+   width: calc(var(--vw)* 18.5);
+   margin-top: calc(var(--vw)* .75);
+}
+ @media only screen and (max-width: 48em) {
+   .jewelry-functionalities-wrapper .functionalities-wrapper .function-wrap:nth-child(3) .jewelry {
+     width: calc(var(--vw)* 33);
+     margin-top: calc(var(--vw)* 3.5);
+  }
+}
+ .jewelry-functionalities-wrapper .functionalities-wrapper .function-wrap:nth-child(4) {
+   background: #5cf3bd;
+}
+ .jewelry-functionalities-wrapper .functionalities-wrapper .function-wrap:nth-child(4) .function-circle {
+   background: #63d9e1;
+}
+ .jewelry-functionalities-wrapper .functionalities-wrapper .function-wrap:nth-child(4) .jewelry {
+   width: calc(var(--vw)* 25);
+   margin-top: calc(var(--vw)* -4);
+}
+ @media only screen and (max-width: 48em) {
+   .jewelry-functionalities-wrapper .functionalities-wrapper .function-wrap:nth-child(4) .jewelry {
+     width: calc(var(--vw)* 46);
+     margin-top: calc(var(--vw)* -3.5);
+  }
+}
+ .jewelry-functionalities-wrapper .functionalities-wrapper .function-wrap {
+   overflow: hidden;
+   margin: calc(var(--vw)* 1.2) calc(var(--vw)* 1);
+   width: calc(var(--vw)* 44);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: calc(var(--vw)* 1.8) 0;
+}
+ @media only screen and (max-width: 48em) {
+   .jewelry-functionalities-wrapper .functionalities-wrapper .function-wrap {
+     width: calc(var(--vw)* 90);
+     margin: calc(var(--vw)* 2.2) calc(var(--vw)* 1);
+  }
+}
+ .jewelry-functionalities-wrapper .functionalities-wrapper .function-wrap .function-circle {
+   text-align: center;
+   border-radius: calc(var(--vw)* 50);
+   height: calc(var(--vw)* 39.5);
+   width: calc(var(--vw)* 39.5);
+   padding: calc(var(--vw)* 3.2) calc(var(--vw)* 3) 0;
+}
+ @media only screen and (max-width: 48em) {
+   .jewelry-functionalities-wrapper .functionalities-wrapper .function-wrap .function-circle {
+     height: calc(var(--vw)* 80);
+     width: calc(var(--vw)* 80);
+     padding: calc(var(--vw)* 6) calc(var(--vw)* 3) 0;
+  }
+}
+ .jewelry-functionalities-wrapper .functionalities-wrapper .function-wrap .function-circle .title {
+   font-size: calc(var(--vw)* 2.1);
+   font-weight: 800;
+   line-height: 1;
+   margin-bottom: calc(var(--vw)* 1.2);
+}
+ @media only screen and (max-width: 48em) {
+   .jewelry-functionalities-wrapper .functionalities-wrapper .function-wrap .function-circle .title {
+     font-size: calc(var(--vw)* 4.3);
+     margin-bottom: calc(var(--vw)* 2);
+  }
+}
+ .jewelry-functionalities-wrapper .functionalities-wrapper .function-wrap .function-circle .sub {
+   font-size: calc(var(--vw)* 1.5);
+   line-height: 1.35;
+}
+ @media only screen and (max-width: 48em) {
+   .jewelry-functionalities-wrapper .functionalities-wrapper .function-wrap .function-circle .sub {
+     font-size: calc(var(--vw)* 3.2);
+  }
+}
+ .jewelry-functionalities-wrapper .functionalities-wrapper .function-wrap .function-circle .jewelry {
+   margin-left: auto;
+   margin-right: auto;
+}
+ .how-to-wrapper {
+   overflow: hidden;
+   width: calc(var(--vw)* 80);
+   margin-top: calc(var(--vw)* 5);
+   margin-bottom: calc(var(--vw)* 7.5);
+}
+ @media only screen and (max-width: 48em) {
+   .how-to-wrapper {
+     width: calc(var(--vw)* 90);
+     margin-bottom: 0;
+  }
+}
+ .how-to-wrapper .how-to-wrap .title {
+   text-transform: uppercase;
+   font-size: calc(var(--vw)* 2.4);
+   font-weight: 800;
+   text-align: center;
+   margin-bottom: calc(var(--vw)* 3.5);
+}
+ @media only screen and (max-width: 48em) {
+   .how-to-wrapper .how-to-wrap .title {
+     font-size: calc(var(--vw)* 4.1);
+  }
+}
+ .how-to-wrapper .how-to-wrap .sub, .how-to-wrapper .how-to-wrap li {
+   font-size: calc(var(--vw)* 1.55);
+   margin: 0;
+}
+ @media only screen and (max-width: 48em) {
+   .how-to-wrapper .how-to-wrap .sub, .how-to-wrapper .how-to-wrap li {
+     font-size: calc(var(--vw)* 2.6);
+     max-width: calc(var(--vw)* 85);
+     margin: 0 auto;
+  }
+}
+ .how-to-wrapper .how-to-wrap b {
+   font-weight: 800;
+}
+ .how-to-wrapper .how-to-wrap ul {
+   padding-left: calc(var(--vw)* 3.3);
+}
+ .how-to-wrapper .how-to-wrap:not(:last-child) {
+   border-bottom: calc(var(--vw)* .1) #9358f3 solid;
+   padding-bottom: calc(var(--vw)* 4);
+   margin-bottom: calc(var(--vw)* 5.5);
+}
+ .how-to-wrapper .how-to-1-wrap .grid-wrap {
+   display: flex;
+   flex-direction: row;
+}
+ .how-to-wrapper .how-to-1-wrap .grid-wrap .text-wrap {
+   width: calc(var(--vw)* 50.5);
+   padding-top: calc(var(--vw)* 4.75);
+}
+.how-to-wrapper .how-to-1-wrap .grid-wrap .text-wrap ul {
+  padding-top: 0;
+}
+
+ .how-to-wrapper .how-to-1-wrap .grid-wrap .text-wrap ul li {
+   margin-bottom: calc(var(--vw)* 2);
+   line-height: 1.45;
+}
+ @media only screen and (max-width: 48em) {
+   .how-to-wrapper .how-to-1-wrap .grid-wrap .text-wrap ul li {
+     margin-bottom: calc(var(--vw)* 3);
+  }
+}
+ .how-to-wrapper .how-to-1-wrap .how-to-1-img {
+   width: calc(var(--vw)* 25.5);
+}
+ @media only screen and (max-width: 48em) {
+   .how-to-wrapper .how-to-1-wrap .how-to-1-img {
+     width: calc(var(--vw)* 40);
+  }
+}
+ .how-to-wrapper .how-to-2-wrap .grid-wrap {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   margin-left: calc(var(--vw)* 4);
+}
+ @media only screen and (max-width: 48em) {
+   .how-to-wrapper .how-to-2-wrap .grid-wrap {
+     justify-content: flex-start;
+  }
+}
+ .how-to-wrapper .how-to-2-wrap .grid-wrap .text-wrap {
+   width: calc(var(--vw)* 50.5);
+   padding-top: calc(var(--vw)* 0);
+}
+ @media only screen and (max-width: 48em) {
+   .how-to-wrapper .how-to-2-wrap .grid-wrap .text-wrap {
+     width: auto;
+  }
+}
+ .how-to-wrapper .how-to-2-wrap .grid-wrap .text-wrap .sub {
+   margin-bottom: calc(var(--vw)* 2);
+}
+ .how-to-wrapper .how-to-2-wrap .grid-wrap .text-wrap ul li {
+   margin-bottom: calc(var(--vw)* 2);
+  line-height: 1.45;
+}
+ @media only screen and (max-width: 48em) {
+   .how-to-wrapper .how-to-2-wrap .grid-wrap .text-wrap ul li {
+     margin-bottom: calc(var(--vw)* 3);
+  }
+}
+ .how-to-wrapper .how-to-2-wrap .how-to-2-img {
+   width: calc(var(--vw)* 16.5);
+   margin-right: calc(var(--vw)* 4);
+}
+ @media only screen and (max-width: 48em) {
+   .how-to-wrapper .how-to-2-wrap .how-to-2-img {
+     width: calc(var(--vw)* 25);
+     margin-left: calc(var(--vw)* -4);
+     margin-right: calc(var(--vw)* 2.5);
+  }
+}
+ .how-to-wrapper .how-to-3-wrap {
+   position: relative;
+   padding-bottom: calc(var(--vw)* 6.5);
+}
+ .how-to-wrapper .how-to-3-wrap .sub {
+   z-index: 1;
+   position: relative;
+   margin-bottom: calc(var(--vw)* 2);
+}
+ .how-to-wrapper .how-to-3-wrap .grid-wrap {
+   display: flex;
+   flex-direction: row;
+}
+ @media only screen and (max-width: 48em) {
+   .how-to-wrapper .how-to-3-wrap .grid-wrap {
+     justify-content: flex-start;
+  }
+}
+ .how-to-wrapper .how-to-3-wrap .grid-wrap .text-wrap {
+   z-index: 1;
+   width: calc(var(--vw)* 50.5);
+   padding-top: calc(var(--vw)* 0);
+}
+ @media only screen and (max-width: 48em) {
+   .how-to-wrapper .how-to-3-wrap .grid-wrap .text-wrap {
+     width: calc(var(--vw)* 55);
+  }
+}
+ .how-to-wrapper .how-to-3-wrap .grid-wrap .text-wrap ul {
+    margin-bottom: calc(var(--vw)* 2);
+    line-height: 1.45;
+}
+ .how-to-wrapper .how-to-3-wrap .grid-wrap .text-wrap ul li {
+   margin-bottom: calc(var(--vw)* 2);
+}
+ @media only screen and (max-width: 48em) {
+   .how-to-wrapper .how-to-3-wrap .grid-wrap .text-wrap ul li {
+     margin-bottom: calc(var(--vw)* 3);
+  }
+}
+ .how-to-wrapper .how-to-3-wrap .how-to-3-img {
+   position: absolute;
+   width: calc(var(--vw)* 38);
+   right: calc(var(--vw)* -8.25);
+   top: calc(var(--vw)* 12);
+   z-index: 0;
+}
+ @media only screen and (max-width: 48em) {
+   .how-to-wrapper .how-to-3-wrap .how-to-3-img {
+     top: calc(var(--vw)* 23);
+     width: calc(var(--vw)* 43);
+     margin-right: calc(var(--vw)* 1.5);
+  }
+}
+ .body-jewelry-wrapper {
+   position: relative;
+   overflow: hidden;
+   background: #5cf3bd;
+   height: calc(var(--vw)* 63);
+   text-align: center;
+   padding-top: calc(var(--vw)* 3);
+}
+ @media only screen and (max-width: 48em) {
+   .body-jewelry-wrapper {
+     height: auto;
+     padding-top: calc(var(--vw)* 4.5);
+     padding-bottom: calc(var(--vw)* 3.5);
+  }
+}
+ .body-jewelry-wrapper .title, .body-jewelry-wrapper .sub {
+   position: relative;
+   z-index: 1;
+}
+ .body-jewelry-wrapper .title {
+   font-size: calc(var(--vw)* 4.8);
+   font-weight: 800;
+   line-height: 0.85;
+   padding-bottom: calc(var(--vw)* 1.8);
+}
+ @media only screen and (max-width: 48em) {
+   .body-jewelry-wrapper .title {
+     font-size: calc(var(--vw)* 7.5);
+     padding-bottom: calc(var(--vw)* 2.8);
+  }
+}
+ .body-jewelry-wrapper .sub {
+   font-size: calc(var(--vw)* 1.25);
+   font-weight: 800;
+   padding-bottom: calc(var(--vw)* 2.8);
+}
+ @media only screen and (max-width: 48em) {
+   .body-jewelry-wrapper .sub {
+     font-size: calc(var(--vw)* 2.2);
+     letter-spacing: calc(var(--vw)* -.08);
+     padding-bottom: calc(var(--vw)* 3.8);
+  }
+}
+ .body-jewelry-wrapper .cta {
+   position: relative;
+   z-index: 1;
+}
+ .body-jewelry-wrapper .purple-ellipse {
+   z-index: 0;
+   position: absolute;
+   background: #d2bbff;
+   clip-path: ellipse(50% 34% at center);
+   width: 100%;
+   height: calc(var(--vw)* 150);
+   top: calc(var(--vw)* -75);
+}
+ @media only screen and (max-width: 48em) {
+   .body-jewelry-wrapper .purple-ellipse {
+     height: calc(var(--vw)* 175);
+     clip-path: ellipse(75% 34% at center);
+  }
+}
+ .body-jewelry-wrapper .grid {
+   position: relative;
+   z-index: 1;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+   margin-top: calc(var(--vw)* 4.5);
+}
+ @media only screen and (max-width: 48em) {
+   .body-jewelry-wrapper .grid {
+     flex-wrap: wrap;
+  }
+}
+ .body-jewelry-wrapper .grid .cat {
+   position: relative;
+}
+ @media only screen and (max-width: 48em) {
+   .body-jewelry-wrapper .grid .cat {
+     margin-bottom: calc(var(--vw)* 2);
+  }
+}
+ .body-jewelry-wrapper .grid .cat .cat-img {
+   width: calc(var(--vw)* 23.35);
+}
+ @media only screen and (max-width: 48em) {
+   .body-jewelry-wrapper .grid .cat .cat-img {
+     width: calc(var(--vw)* 46);
+  }
+}
+ .body-jewelry-wrapper .grid .cat p {
+   position: absolute;
+   text-transform: uppercase;
+   font-weight: 800;
+   margin: 0 auto;
+   left: 0;
+   right: 0;
+   font-size: calc(var(--vw)* 2);
+   bottom: calc(var(--vw)* 3.75);
+}
+ @media only screen and (max-width: 48em) {
+   .body-jewelry-wrapper .grid .cat p {
+     font-size: calc(var(--vw)* 4.2);
+     bottom: calc(var(--vw)* 7.5);
+  }
+}
+ 
+
+
+@keyframes pulsate {
+  0% {-webkit-transform: scale(0.1, 0.1); opacity: 0.0;}
+  50% {opacity: 1.0;}
+  100% {-webkit-transform: scale(1, 1); opacity: 0.0;}
+}
+
+</style>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha512-bnIvzh6FU75ZKxp0GXLH9bewza/OIw6dLVh9ICg0gogclmYGguQJWl8U30WpbsGTqbIiAwxTsbe76DErLq5EDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!-- Add back for Salesforce - START -->
+<!-- Slick CSS -->
+<!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/@accessible360/accessible-slick@1.0.1/slick/slick.min.css"> -->
+<!-- Accessibility - Slick CSS -->
+<!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/@accessible360/accessible-slick@1.0.1/slick/accessible-slick-theme.min.css"> -->
+<!-- <script type="text/javascript" src="//cdn.jsdelivr.net/npm/@accessible360/accessible-slick@1.0.1/slick/slick.min.js"></script> -->
+<!-- Add back for Salesforce - END -->
+
+<!-- Comment out for Salesforce - START -->
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<!-- Comment out for Salesforce - END -->
+
+
+<div class="rbj-element rbj-hero-wrapper">
+  <div class="img-wrapper">
+    <img src="landing-pages/rbj/earswirl_withear.gif?$staticlink$" alt="Ear">
+  </div>
+
+  <div class="text-wrapper">
+    <img class="logo" src="landing-pages/rbj/pierced-logo.png?$staticlink$" alt="Pierced by Claire's">
+    <p class="hero-title fw800">BODY JEWELRY 101</p>
+    <p class="hero-sub fw400">Your go-to guide to <br>piercing placements, styles, and sizing</p>
+    <p class="hero-exc fw400">*Claire’s does not perform all piercing types in-store. See piercing page for details.</p>
+
+  </div>
+</div>
+
+<div class="space-mod"></div>
+
+<div class="rbj-element psb-wrapper">
+  <div class="headline cap">Piercing Size Breakdown</div>
+
+  <div class="cat-wrap top gauge-guide">
+    <div class="title cap">Gauge Guide</div>
+
+    <div class="content">
+      <div class="gauge-wrap">
+        <p class="label">GAUGE</p>
+        <img class="gauges" src="landing-pages/rbj/gauge.png?$staticlink$" alt="Gauges">
+
+        <div class="gauge-sizes">
+          <p>10G</p>
+          <p>12G</p>
+          <p>14G</p>
+          <p>16G</p>
+          <p>18G</p>
+          <p>20G</p>
+        </div>
+
+        <p class="btm-txt cap">The smaller the number, the thicker the gAUge</p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="cat-wrap col-2-jd">
+    <div class="title cap">Ear</div>
+
+    <div class="content">
+      <div class="col-2-wrap">
+        <div class="col-1-jd">
+          <p>Tragus - 20G, 18G, 16G</p>
+          <p>Daith - 16G</p>
+          <p>Rook - 20G, 18G, 16G</p>
+          <p>Forward Helix - 20G, 18G, 16G</p>
+          <p>Industrial - 16G, 14G</p>
+        </div>
+
+        <div class="col-2-jd">
+          <p>Helix (Cartliage) - 20G, 18G, 16G</p>
+          <p>Conch - 18G, 16G</p>
+          <p>Anti-Tragus - 20G, 18G, 16G</p>
+          <p>Lobe - 20G, 18G</p> 
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <div class="cat-wrap col-2-jd">
+    <div class="title cap">Nose</div>
+
+    <div class="content">
+      <div class="col-2-wrap">
+        <div class="col-1-jd">
+          <p>Septum - 18G, 16G</p>
+        </div>
+
+        <div class="col-2-jd">
+          <p>Nostril - 22G, 20G, 18G</p>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <div class="cat-wrap col-2-jd">
+    <div class="title cap">Body</div>
+
+    <div class="content">
+      <div class="col-2-wrap">
+        <div class="col-1-jd">
+          <p>Belly - 14G</p>
+          <p>Tongue - 14G</p>
+        </div>
+
+        <div class="col-2-jd">
+          <p>Labret - 18G, 16G, 14G</p>
+          <p>Lip - 16G, 14G</p>
+          <p>Eyebrow - 16G, 14G</p>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <div class="cat-wrap length-guide">
+    <div class="title cap">Length Guide</div>
+
+    <div class="content">
+      <div class="length-wrap">
+        <img class="lengths" src="landing-pages/rbj/length.jpg?$staticlink$" alt="Length">
+
+        <div class="length-sizes">
+          <p><b>4MM</b> <br>5/32”</p>
+          <p><b>5MM</b> <br>3/16”</p>
+          <p><b>6MM</b> <br>1/4”</p>
+          <p><b>8MM</b> <br>5/16”</p>
+          <p><b>10MM</b> <br>3/8”</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <div class="cat-wrap diameter-guide">
+    <div class="title cap">Diameter Guide</div>
+
+    <div class="content">
+      <div class="diameter-wrap">
+        <img class="earring" src="landing-pages/rbj/diameter.jpg?$staticlink$" alt="Earring">
+
+        <div class="diameter-text">
+          <p>DIAMETER</p>
+        </div>
+      </div>
+
+      <div class="diameter-wrap-2">
+        <div class="row-1">
+          <img class="earrings" src="landing-pages/rbj/diameter-2.jpg?$staticlink$" alt="Earrings">
+
+          <div class="diameter-sizes-1">
+            <p>3/16” <br>(4.88mm)</p>
+            <p>1/4” <br>(6.4mm)</p>
+            <p>5/16” <br>(7.9mm)</p>
+            <p>3/8” <br>(9.5mm)</p>
+            <p>7/16” <br>(11mm)</p>
+          </div>
+        </div>
+
+        <div class="row-2">
+          <img class="earrings-2" src="landing-pages/rbj/diameter-3.jpg?$staticlink$" alt="Earrings">
+
+          <div class="diameter-sizes-2">
+            <p>1/2” <br>(13mm)</p>
+            <p>9/16” <br>(14.3mm)</p>
+            <p>5/8” <br>(16mm)</p>
+            <p>3/4” <br>(19mm)</p>
+            <p>7/8” <br>(22mm)</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+<div class="rbj-element ear-placements-wrapper">
+  <div class="headline cap">Ear Piercing Placements</div>
+
+  <div class="ear-hover">
+    <img class="ear-placements" src="landing-pages/rbj/ep-placements-dt.jpg?$staticlink$" alt="Ear">
+
+    <div class="dots-wrapper">
+
+      <div class="dot black-dot" value="black">
+        
+        <div class="ring"></div>
+      </div>
+
+      <div class="dot blue-dot" value="blue">
+
+        <div class="ring"></div>
+      </div>
+
+      <div class="dot green-dot" value="green">
+        
+        <div class="ring"></div>
+      </div>
+
+      <div class="dot light-purple-dot" value="light-purple">
+        
+        <div class="ring"></div>
+      </div>
+
+      <div class="dot orange-dot" value="orange">
+
+        <div class="ring"></div>
+      </div>
+
+      <div class="dot pink-dot" value="pink">
+        
+        <div class="ring"></div>
+      </div>
+
+      <div class="dot purple-dot" value="purple">
+        
+        <div class="ring"></div>
+      </div>
+
+      <div class="dot yellow-dot-1" value="yellow">
+        <div class="yellow-line"></div>
+        <div class="dot yellow-dot-2">
+          <div class="ring"></div>
+        </div>
+        <div class="ring"></div>
+      </div>
+
+      <div class="dot white-dot" value="white">
+        
+        <div class="ring"></div>
+      </div>
+
+      <!-- Blurbs -->
+
+      <!-- Black Blurb -->
+      <div class="blurb black-blurb">
+
+        <div class="elements-wrapper">
+          <div class="head">
+            <div class="title">CONCH</div>
+            <p class="sub">A piercing through the center of the ear’s cartilage.</p>
+          </div>
+
+          <div class="bod">
+            <p class="b">Suggested Gauges:</p>
+            <p class="c">18G, 16G</p>
+
+            <p class="b">Suggested Hoop Sizes:</p>
+            <p class="c">9MM to 13MM</p>
+
+            <p class="b">Earring Types:</p>
+            <p class="c">Flatback earrings, straight barbells, horseshoes & hoops</p>
+
+            <p class="b">Materials Offered:</p>
+            <ul class="c">
+              <li>18KT Gold Plated Titanium</li>
+              <li>Titanium</li>
+              <li>Sterling Silver</li>
+              <li>Stainless Steel</li>
+            </ul>
+
+          </div>
+        </div>
+
+        <img class="piercing" src="landing-pages/rbj/conch.png?$staticlink$" alt="Conch">
+
+      </div>
+
+
+      <!-- Blue Blurb -->
+      <div class="blurb blue-blurb">
+
+        <div class="elements-wrapper">
+          <div class="head">
+            <div class="title">AURICLE</div>
+            <p class="sub">A cartilage piercing in the middle outer edge of the ear.</p>
+          </div>
+
+          <div class="bod">
+            <p class="b">Suggested Gauges:</p>
+            <p class="c">20G, 18G, 16G</p>
+
+            <p class="b">Suggested Hoop Sizes:</p>
+            <p class="c">5MM to 8MM</p>
+
+            <p class="b">Earring Types:</p>
+            <p class="c">Flatback earrings, straight barbells, horseshoes & hoops</p>
+
+            <p class="b">Materials Offered:</p>
+            <ul class="c">
+              <li>18KT Gold Plated Titanium</li>
+              <li>Titanium</li>
+              <li>Sterling Silver</li>
+              <li>Stainless Steel</li>
+            </ul>
+
+          </div>
+        </div>
+
+        <img class="piercing" src="landing-pages/rbj/auricle.png?$staticlink$" alt="Auricle">
+
+      </div>
+
+
+      <!-- Green Blurb -->
+      <div class="blurb green-blurb">
+
+        <div class="elements-wrapper">
+          <div class="head">
+            <div class="title">DAITH</div>
+            <p class="sub">A piercing in the innermost fold of&nbsp;your cartilage, adjacent to the ear&nbsp;canal.</p>
+          </div>
+
+          <div class="bod">
+            <p class="b">Suggested Gauges:</p>
+            <p class="c">16G</p>
+
+            <p class="b">Suggested Hoop Sizes:</p>
+            <p class="c">8MM to 10MM</p>
+
+            <p class="b">Earring Types:</p>
+            <p class="c">Hoops & barbells</p>
+
+            <p class="b">Materials Offered:</p>
+            <ul class="c">
+              <li>Titanium</li>
+              <li>Stainless Steel</li>
+            </ul>
+
+          </div>
+        </div>
+
+        <img class="piercing" src="landing-pages/rbj/daith.png?$staticlink$" alt="Daith">
+
+      </div>
+
+
+      <!-- Light Purple Blurb -->
+      <div class="blurb light-purple-blurb">
+
+        <div class="elements-wrapper">
+          <div class="head">
+            <div class="title">FORWARD HELIX</div>
+            <p class="sub">A piercing in the small outer rim of the cartilage at the top & front of the ear.</p>
+          </div>
+
+          <div class="bod">
+            <p class="b">Suggested Gauges:</p>
+            <p class="c">20G, 18G, 16G</p>
+
+            <p class="b">Suggested Hoop Sizes:</p>
+            <p class="c">5MM to 6.5MM</p>
+
+            <p class="b">Earring Types:</p>
+            <p class="c">Flatback earrings & hoops</p>
+
+            <p class="b">Materials Offered:</p>
+            <ul class="c">
+              <li>18KT Gold Plated Titanium</li>
+              <li>Titanium</li>
+              <li>Sterling Silver</li>
+              <li>Stainless Steel</li>
+            </ul>
+
+          </div>
+        </div>
+
+        <img class="piercing" src="landing-pages/rbj/forward-helix.png?$staticlink$" alt="Forward Helix">
+
+      </div>
+
+
+      <!-- Orange Blurb -->
+      <div class="blurb orange-blurb">
+
+        <div class="elements-wrapper">
+          <div class="head">
+            <div class="title">ANTI-TRAGUS</div>
+            <p class="sub">A piercing through the small, curved piece of skin above the ear lobe.</p>
+          </div>
+
+          <div class="bod">
+            <p class="b">Suggested Gauges:</p>
+            <p class="c">20G, 18G, 16G</p>
+
+            <p class="b">Suggested Hoop Sizes:</p>
+            <p class="c">5MM to 8MM</p>
+
+            <p class="b">Earring Types:</p>
+            <p class="c">Flatback earrings, straight barbells & hoops</p>
+
+            <p class="b">Materials Offered:</p>
+            <ul class="c">
+              <li>18KT Gold Plated Titanium</li>
+              <li>Titanium</li>
+              <li>Sterling Silver</li>
+              <li>Stainless Steel</li>
+            </ul>
+
+          </div>
+        </div>
+
+        <img class="piercing" src="landing-pages/rbj/anti-tragus.png?$staticlink$" alt="Anti-Tragus">
+
+      </div>
+
+
+      <!-- Pink Blurb -->
+      <div class="blurb pink-blurb">
+
+        <div class="elements-wrapper">
+          <div class="head">
+            <div class="title">TRAGUS</div>
+            <p class="sub">A piercing in the small piece of cartilage that covers your ear canal.</p>
+          </div>
+
+          <div class="bod">
+            <p class="b">Suggested Gauges:</p>
+            <p class="c">20G, 18G, 16G</p>
+
+            <p class="b">Suggested Hoop Sizes:</p>
+            <p class="c">5MM to 8MM</p>
+
+            <p class="b">Earring Types:</p>
+            <p class="c">Flatback earrings & hoops</p>
+
+            <p class="b">Materials Offered:</p>
+            <ul class="c">
+              <li>18KT Gold Plated Titanium</li>
+              <li>Titanium</li>
+              <li>Sterling Silver</li>
+              <li>Stainless Steel</li>
+            </ul>
+
+          </div>
+        </div>
+
+        <img class="piercing" src="landing-pages/rbj/tragus.png?$staticlink$" alt="Tragus">
+
+
+      </div>
+
+
+      <!-- Purple Blurb -->
+      <div class="blurb purple-blurb">
+
+        <div class="elements-wrapper">
+          <div class="head">
+            <div class="title">ROOK</div>
+            <p class="sub">The rook is a cartilage piercing of the anti-helix, the horizontal fold that sits just above the tragus.</p>
+          </div>
+
+          <div class="bod">
+            <p class="b">Suggested Gauges:</p>
+            <p class="c">20G, 18G, 16G</p>
+
+            <p class="b">Suggested Hoop Sizes:</p>
+            <p class="c">5MM to 8MM</p>
+
+            <p class="b">Earring Types:</p>
+            <p class="c">Curved barbells and hoops</p>
+
+            <p class="b">Materials Offered:</p>
+            <ul class="c">
+              <li>18KT Gold Plated Titanium</li>
+              <li>Titanium</li>
+              <li>Sterling Silver</li>
+              <li>Stainless Steel</li>
+            </ul>
+
+          </div>
+        </div>
+
+        <img class="piercing" src="landing-pages/rbj/rook.png?$staticlink$" alt="Rook">
+
+      </div>
+
+
+      <!-- Yellow Blurb -->
+      <div class="blurb yellow-blurb">
+
+        <div class="elements-wrapper">
+          <div class="head">
+            <div class="title">INDUSTRIAL</div>
+            <p class="sub">Two piercings in the upper ear cartilage connected by one piece of jewelry.</p>
+          </div>
+
+          <div class="bod">
+            <p class="b">Suggested Gauges:</p>
+            <p class="c">16G, 14G</p>
+
+            <p class="b">Suggested Hoop Sizes:</p>
+            <p class="c">5MM to 8MM</p>
+
+            <p class="b">Earring Types:</p>
+            <p class="c">Industrial bars</p>
+
+            <p class="b">Materials Offered:</p>
+            <ul class="c">
+              <li>Titanium</li>
+              <li>Stainless Steel</li>
+            </ul>
+
+          </div>
+        </div>
+
+        <img class="piercing" src="landing-pages/rbj/industrial.png?$staticlink$" alt="Industrial">
+
+      </div>
+
+
+      <!-- White Blurb -->
+      <div class="blurb white-blurb">
+
+        <div class="elements-wrapper">
+          <div class="head">
+            <div class="title">HELIX <br>(CARTILAGE)</div>
+            <p class="sub">Any piercing through the ear’s upper cartilage.</p>
+          </div>
+
+          <div class="bod">
+            <p class="b">Suggested Gauges:</p>
+            <p class="c">20G, 18G, 16G</p>
+
+            <p class="b">Suggested Hoop Sizes:</p>
+            <p class="c">6MM to 8MM</p>
+
+            <p class="b">Earring Types:</p>
+            <p class="c">Flatback earrings, straight barbells, horseshoes & hoops</p>
+
+            <p class="b">Materials Offered:</p>
+            <ul class="c">
+              <li>18KT Gold Plated Titanium</li>
+              <li>Titanium</li>
+              <li>Sterling Silver</li>
+              <li>Stainless Steel</li>
+            </ul>
+
+          </div>
+        </div>
+
+        <img class="piercing" src="landing-pages/rbj/helix-cartilage.png?$staticlink$" alt="Helix (Cartilage)">
+
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+
+<div class="rbj-element jewelry-placements-carousel-wrapper">
+
+  <div class="mock-slide">
+    <div class="elements-wrapper">
+      <p class="sub">Ready to style? <br>
+        Shop our wide range <br>
+        of body jewelry for ears, <br>
+        nose, belly & beyond.</p>
+        <p class="see-more">See More</p>
+    </div>
+  </div>
+
+  <div class="multiple-items">
+
+    <div class="placement-slide">
+      <div class="elements-wrapper">
+        <div class="head">
+          <div class="title">Nostril</div>
+          <p class="sub">The most common nose piercing which is&nbsp;made through the center of the nostril.</p>
+        </div>
+
+        <div class="bod">
+          <p class="b">Suggested Gauges:</p>
+          <p class="c">22G, 20G, 18G</p>
+
+          <p class="b">Suggested Hoop Sizes:</p>
+          <p class="c">8MM to 12MM</p>
+
+          <p class="b">Jewelry Types:</p>
+          <p class="c">L-bends, bones, screws, threadless styles, straight pins & hoops</p>
+
+          <p class="b">Materials Offered:</p>
+          <ul class="c">
+            <li>18KT Gold Plated Titanium</li>
+            <li>Titanium</li>
+            <li>Stainless Steel</li>
+            <li>Sterling Silver</li>
+          </ul>
+
+        </div>
+      </div>
+
+      <img class="jewelry nostril" src="landing-pages/rbj/nostril.png?$staticlink$" alt="Jewelry">
+
+    </div>
+
+    <div class="placement-slide">
+      <div class="elements-wrapper">
+        <div class="head">
+          <div class="title">Septum</div>
+          <p class="sub">A piercing through the soft tissue of the thin wall of cartilage and skin that separates the nostrils.</p>
+        </div>
+
+        <div class="bod">
+          <p class="b">Suggested Gauges:</p>
+          <p class="c">18G, 16G</p>
+
+          <p class="b">Suggested Hoop Sizes:</p>
+          <p class="c">8MM to 12MM</p>
+
+          <p class="b">Jewelry Types:</p>
+          <p class="c">Hoops</p>
+
+          <p class="b">Materials Offered:</p>
+          <ul class="c">
+            <li>18KT Gold Plated Titanium</li>
+            <li>Titanium</li>
+            <li>Stainless Steel</li>
+            <li>Sterling Silver</li>
+          </ul>
+
+        </div>
+      </div>
+
+      <img class="jewelry septum" src="landing-pages/rbj/septum.png?$staticlink$" alt="Jewelry">
+
+    </div>
+
+    <div class="placement-slide">
+      <div class="elements-wrapper">
+        <div class="head">
+          <div class="title">Labret</div>
+          <p class="sub">A piercing through the lower lip, right above the chin.</p>
+        </div>
+
+        <div class="bod">
+          <p class="b">Suggested Gauges:</p>
+          <p class="c">18G, 16G, 14G</p>
+
+          <p class="b">Suggested Hoop Sizes:</p>
+          <p class="c">8MM to 11MM</p>
+
+          <p class="b">Jewelry Types:</p>
+          <p class="c">Flatbacks, curved barbells & hoops</p>
+
+          <p class="b">Materials Offered:</p>
+          <ul class="c">
+            <li>18KT Gold Plated Titanium</li>
+            <li>Titanium</li>
+            <li>Stainless Steel</li>
+          </ul>
+
+        </div>
+      </div>
+
+      <img class="jewelry labret" src="landing-pages/rbj/labret.png?$staticlink$" alt="Jewelry">
+
+    </div>
+
+    <div class="placement-slide">
+      <div class="elements-wrapper">
+        <div class="head">
+          <div class="title">LIP</div>
+          <p class="sub">A piercing that goes through or around the&nbsp;lips (upper, lower or middle lip).</p>
+        </div>
+
+        <div class="bod">
+          <p class="b">Suggested Gauges:</p>
+          <p class="c">16G, 14G</p>
+
+          <p class="b">Suggested Hoop Sizes:</p>
+          <p class="c">8MM to 11MM</p>
+
+          <p class="b">Jewelry Types:</p>
+          <p class="c">Flatback, curved barbells, horseshoes & hoops</p>
+
+          <p class="b">Materials Offered:</p>
+          <ul class="c">
+            <li>18KT Gold Plated Titanium</li>
+            <li>Titanium</li>
+            <li>Stainless Steel</li>
+          </ul>
+
+        </div>
+      </div>
+
+      <img class="jewelry lip" src="landing-pages/rbj/goldhorshoe_lip.png?$staticlink$" alt="Jewelry">
+
+    </div>
+
+    <div class="placement-slide">
+      <div class="elements-wrapper">
+        <div class="head">
+          <div class="title">TONGUE</div>
+          <p class="sub">A piercing done vertically through the muscles&nbsp;in the center of the mouth.</p>
+        </div>
+
+        <div class="bod">
+          <p class="b">Suggested Gauges:</p>
+          <p class="c">14G</p>
+
+          <p class="b">Jewelry Types:</p>
+          <p class="c">Barbells</p>
+
+          <p class="b">Materials Offered:</p>
+          <ul class="c">
+            <li>Titanium</li>
+            <li>Stainless Steel</li>
+          </ul>
+
+        </div>
+      </div>
+
+      <img class="jewelry tongue" src="landing-pages/rbj/tongue.png?$staticlink$" alt="Jewelry">
+
+    </div>
+
+    <div class="placement-slide">
+      <div class="elements-wrapper">
+        <div class="head">
+          <div class="title">BELLY</div>
+          <p class="sub">A piercing of the skin that goes through&nbsp;the navel.</p>
+        </div>
+
+        <div class="bod">
+          <p class="b">Suggested Gauges:</p>
+          <p class="c">14G</p>
+
+          <p class="b">Suggested Hoop Sizes:</p>
+          <p class="c">8MM to 12MM</p>
+
+          <p class="b">Jewelry Types:</p>
+          <p class="c">Clicker & regular belly rings</p>
+
+          <p class="b">Materials Offered:</p>
+          <ul class="c">
+            <li>18KT Gold Plated Titanium</li>
+            <li>Titanium</li>
+            <li>Stainless Steel</li>
+          </ul>
+
+        </div>
+      </div>
+
+      <img class="jewelry belly" src="landing-pages/rbj/belly.png?$staticlink$" alt="Jewelry">
+
+    </div>
+
+    <div class="placement-slide">
+      <div class="elements-wrapper">
+        <div class="head">
+          <div class="title">EYEBROW</div>
+          <p class="sub">A piercing through the skin of the eyebrow,&nbsp;with one end above the brow ridge&nbsp;and the other below the outer curve.</p>
+        </div>
+
+        <div class="bod">
+          <p class="b">Suggested Gauges:</p>
+          <p class="c">16G, 14G</p>
+
+          <p class="b">Suggested Hoop Sizes:</p>
+          <p class="c">8MM to 11MM</p>
+
+          <p class="b">Jewelry Types:</p>
+          <p class="c">Curved barbells & hoops</p>
+
+          <p class="b">Materials Offered:</p>
+          <ul class="c">
+            <li>18KT Gold Plated Titanium</li>
+            <li>Titanium</li>
+            <li>Stainless Steel</li>
+          </ul>
+
+        </div>
+      </div>
+
+      <img class="jewelry eyebrow" src="landing-pages/rbj/eyebrow.png?$staticlink$" alt="Jewelry">
+
+    </div>
+
+  </div>
+</div>
+
+
+<div class="rbj-element jewelry-functionalities-wrapper">
+  <div class="headline cap">Jewelry Functionalities</div>
+
+  <div class="functionalities-wrapper">
+  	<div class="function-wrap">
+  		<div class="function-circle">
+  			<p class="title">INTERNALLY <br>THREADED</p>
+  			<p class="sub">Has threading on the inside <br>of the post, with a screw mechanism on <br>the design side of the jewelry.</p>
+  			<img class="jewelry" src="landing-pages/rbj/internally-threaded.png?$staticlink$" alt="Jewelry">
+  		</div>
+  	</div>
+
+  	<div class="function-wrap">
+  		<div class="function-circle">
+  			<p class="title">THREADLESS <br>FLATBACK</p>
+  			<p class="sub">Instead of using threads, this design relies <br>on tension to secure the two pieces. <br>The design end features a thin pin that fits into <br>the post, and you bend the pin inside the post <br>to create the tension.</p>
+  			<img class="jewelry" src="landing-pages/rbj/threadless-flatback.png?$staticlink$" alt="Jewelry">
+  		</div>
+  	</div>
+
+  	<div class="function-wrap">
+  		<div class="function-circle">
+  			<p class="title">EXTERNALLY <br>THREADED</p>
+  			<p class="sub">Has threading on the inside of the <br>design side of the jewelry, with the post serving <br>as the screw to connect the two pieces.</p>
+  			<img class="jewelry" src="landing-pages/rbj/externally-threaded.png?$staticlink$" alt="Jewelry">
+  		</div>
+  	</div>
+
+  	<div class="function-wrap">
+  		<div class="function-circle">
+  			<p class="title">CLICKER <br>HOOP</p>
+  			<p class="sub">The seamless design of the clasp <br class="mobile-only-jd">ensures <br class="desktop-only-jd">that the connection between the <br class="mobile-only-jd">two parts <br class="desktop-only-jd">is flush and smooth, with no visible <br class="mobile-only-jd">gaps, <br class="desktop-only-jd">creating a sleek and elegant finish.</p>
+  			<img class="jewelry" src="landing-pages/rbj/clicker-hoop.png?$staticlink$" alt="Jewelry">
+  		</div>
+  	</div>
+  </div>
+</div>
+
+
+<div class="rbj-element how-to-wrapper">
+
+	<div class="how-to-wrap how-to-1-wrap">
+		<p class="title">HOW TO USE THREADLESS JEWELRY</p>
+		<p class="sub">Insert the earring post through the back of your ear. Once the post is visible at the front of your piercing, insert the pin slightly into the post and follow the below steps:</p>
+
+		<div class="grid-wrap">
+			<div class="text-wrap">
+				<ul>
+					<li>Bend the pin to create tension. *Be&nbsp;cautious not to bend it too sharply, as this may prevent you from adjusting the fit later.*</li>
+					<li>Once the pin is bent, pull the top out from the post, <br class="desktop-only-jd">then re-insert and push the pin all the way into the post. <br>
+					<b>Tip:</b> If it's too tight, adjust the bend for a more comfortable fit.</li>
+				</ul>
+
+				<p class="sub"><b>To Remove:</b> Hold front and back of earring with either hand, gently pull the pin out from the post and remove the post from the back of your ear. </p>
+
+			</div>
+
+			<picture>
+        <source media="(min-width:48em)" srcset="landing-pages/rbj/threadless-dt.jpg?$staticlink$">
+        <img class="how-to-1-img" src="landing-pages/rbj/threadless-mb.jpg?$staticlink$" alt="Threadless earring">
+      </picture>
+		</div>
+	</div>
+
+
+	<div class="how-to-wrap how-to-2-wrap">
+		<p class="title">How to Wear Threaded Flatbacks</p>
+
+		<div class="grid-wrap">
+
+			<picture>
+        <img class="how-to-2-img" src="landing-pages/rbj/flatback.jpg?$staticlink$" alt="Threadless flatbacks">
+      </picture>
+
+			<div class="text-wrap">
+				<p class="sub">Insert the earring post through the back of your ear. <br class="desktop-only-jd">Once the post is visible at the front of your piercing, <br class="desktop-only-jd">attach the design top to the post and follow the below&nbsp;steps:</p>
+
+				<ul>
+					<li>Hold the earring with both hands—one hand on the base of the post, and the other on the design top.</li>
+					<li>Screw the design top by rotating it counterclockwise.</li>
+				</ul>
+
+				<p class="sub"><b>To Remove:</b> Hold earring with both hands and unscrew top from post, once disconnected remove post from the back of your ear.</p>
+
+			</div>
+
+		</div>
+	</div>
+
+
+	<div class="how-to-wrap how-to-3-wrap">
+		<p class="title">How to USE CLICKER HOOPS</p>
+
+		<p class="sub">The seamless design of the clasp ensures that the connection between the two parts is flush and smooth, with no visible gaps, creating a sleek and elegant finish.</p>
+
+		<div class="grid-wrap">
+
+			<div class="text-wrap">
+
+				<ul>
+					<li>Gently open the hinged segment of the hoop by pulling it&nbsp;upwards.</li>
+					<li>Slide the open part of the hoop through your piercing, ensuring the open segment is on the outside.</li>
+					<li>Close the hoop by pressing the two sides together until you hear a distinct "click," indicating that it is securely fastened.</li>
+				</ul>
+
+				<p class="sub"><b>To Remove:</b> Locate the hinges on hoop, then with both hands hold hoop in place, pull the hinged segment upwards and slide hoop out of your ear.</p>
+
+			</div>
+
+			<picture>
+        <img class="how-to-3-img" src="landing-pages/rbj/clicker-hoops.jpg?$staticlink$" alt="Threadless flatbacks">
+      </picture>
+
+		</div>
+	</div>
+
+</div>
+
+
+<div class="rbj-element body-jewelry-wrapper">
+
+	<p class="title center">STYLES FOR <br>EVERY PIERCING</p>
+	<p class="sub center">READY TO STYLE? <br>SHOP OUR WIDE RANGE OF BODY JEWELRY FOR EARS, NOSE, BELLY & BEYOND.</p>
+
+	<a href="#" class="cta">SHOP BODY JEWELRY</a>
+
+
+	<div class="grid">
+		<div class="cat">
+			<img class="cat-img" src="landing-pages/rbj/nose.png?$staticlink$" alt="Nose ring">
+			<p>Nose</p>
+		</div>
+
+		<div class="cat">
+			<img class="cat-img" src="landing-pages/rbj/ear.png?$staticlink$" alt="Ear ring">
+			<p>Ear</p>
+		</div>
+
+		<div class="cat">
+			<img class="cat-img" src="landing-pages/rbj/belly-body.png?$staticlink$" alt="Belly ring">
+			<p>Belly</p>
+		</div>
+
+		<div class="cat">
+			<img class="cat-img" src="landing-pages/rbj/body.png?$staticlink$" alt="Body ring">
+			<p>Body</p>
+		</div>
+	</div>
+
+
+	<div class="purple-ellipse"></div>
+
+
+</div>
+
+
+<script type="text/javascript">
+
+$('.multiple-items').slick({
+  infinite: true,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  variableWidth:true,
+  arrows: true,
+  nextArrow:"<button type='button' class='slick-next'><img class='arrow-next' src='landing-pages/rbj/arrow.png?$staticlink$' alt='Right arrow'></button>",
+  responsive: [{
+    breakpoint: 768,
+    settings: {
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      centerMode: false
+    }
+  }]
+});
+
+$('.dot').click(function() {
+  var colorValueClassName = '.' + $(this).attr('value') + '-blurb';
+  $(colorValueClassName).addClass('active-color');
+});
+
+$('.blurb').click(function() {
+  $(this).removeClass('active-color');
+});
+
+</script>
